@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Post Preview</title>
+   <style>
+     /* Your styling goes here */
+   </style>
+</head>
+<body>
+
+<h1 id="postTitle">Post Title</h1>
+<img id="postImage" src="placeholder.jpg" alt="Post Image">
+<p id="postDescription">Post Description</p>
+<p id="postTag">Post Tag</p>
+<a id="downloadBtn" href="#" onclick="downloadPost()">Download</a>
+
+<script>
+   // Function to get post details from URL parameters
+   function getPostDetails() {
+     const urlParams = new URLSearchParams(window.location.search);
+
+     // Get post details from URL parameters
+     const postId = urlParams.get('id');
+     const postTitle = decodeURIComponent(urlParams.get('title'));
+     const postImageUrl = decodeURIComponent(urlParams.get('imageUrl'));
+     const postDescription = decodeURIComponent(urlParams.get('description'));
+     const postTag = decodeURIComponent(urlParams.get('tag'));
+     const postDownloadLink = decodeURIComponent(urlParams.get('downloadLink'));
+
+     return {
+       id: postId,
+       title: postTitle,
+       imageUrl: postImageUrl,
+       description: postDescription,
+       tag: postTag,
+       downloadLink: postDownloadLink
+     };
+   }
+
+   // Function to display post details on the page
+   function displayPostDetails() {
+     const postDetails = getPostDetails();
+
+     document.getElementById('postTitle').innerText = postDetails.title;
+     document.getElementById('postImage').src = postDetails.imageUrl;
+     document.getElementById('postDescription').innerText = postDetails.description;
+     document.getElementById('postTag').innerText = "Tag: " + postDetails.tag;
+     document.getElementById('downloadBtn').href = postDetails.downloadLink;
+   }
+
+   // Function to simulate download action (replace with actual download logic)
+   function downloadPost() {
+     const postDetails = getPostDetails();
+     alert('Simulating download for post: ' + postDetails.title);
+     // Add your download logic here
+   }
+
+   // Call displayPostDetails when the page loads
+   window.onload = displayPostDetails;
+</script>
+
+</body>
+</html>
