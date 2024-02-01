@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/topnav.css" >
-<link rel="stylesheet" href="css/layout.css" >
-	
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/topnav.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
 </head>
 <body>
 
@@ -24,30 +23,66 @@ body {
     <i class="fa fa-bars"></i>
   </a>
 </div>
+
 <div class="row">
-<div style="padding-left:16px">
-  <h2>Responsive Topnav Example</h2>
-  <p>Resize the browser window to see how it works.</p>
+  <div style="padding-left:16px">
+    <h2>Responsive Topnav Example</h2>
+    <p>Resize the browser window to see how it works.</p>
+  </div>
 </div>
-</div>	
+
 <div class="row">
-	<div class="col-5">
-	 <p> Column 1</p>
-	</div>
-	<div class="col-5">
-		<p> Column2</p>
-	</div>
-	</div>
+  <div class="col-5">
+    <p>Column 1</p>
+  </div>
+  <div class="col-5" id="postList">
+    <!-- Post list will be dynamically generated here -->
+  </div>
+</div>
 
 <script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
   }
-}
+
+  // Function to load posts from JSON and display in the postList
+  async function loadPosts() {
+    var postListDiv = document.getElementById("postList");
+
+    try {
+      // Fetch JSON data from post.json
+      var response = await fetch("post.json");
+      var posts = await response.json();
+
+      // Iterate through posts and create HTML elements for each post
+      posts.posts.forEach(function(post) {
+        var postElement = document.createElement("div");
+        postElement.innerHTML = `
+          <div class="post" onclick="showPreview(${post.id})">
+            <img src="${post.imageUrl}" alt="${post.title}" width="100%">
+            <p>${post.title}</p>
+          </div>
+        `;
+        postListDiv.appendChild(postElement);
+      });
+    } catch (error) {
+      console.error("Error loading posts:", error);
+    }
+  }
+
+  // Function to show preview page for the selected post
+  function showPreview(postId) {
+    // Assuming you have a preview.html page to display detailed post information
+    window.location.href = `preview.html?id=${postId}`;
+  }
+
+  // Call loadPosts when the page loads
+  window.onload = loadPosts;
 </script>
 
 </body>
