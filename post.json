@@ -3,26 +3,26 @@
     {
       "id": 1,
       "title": "Sample Post 1",
-      "imageUrl": "https://example.com/image1.jpg",
+      "imageUrl": "imgs/Strawberry.png",
       "description": "This is the description for the first post.",
       "tag": "Nature",
-      "downloadLink": "https://example.com/download1"
+      "downloadLink": "imgs/Strawberry.png"
     },
     {
       "id": 2,
       "title": "Sample Post 2",
-      "imageUrl": "https://example.com/image2.jpg",
+      "imageUrl": "imgs/Strawberry.png",
       "description": "This is the description for the second post.",
       "tag": "Technology",
-      "downloadLink": "https://example.com/download2"
+      "downloadLink": "imgs/Strawberry.png"
     },
     {
       "id": 3,
       "title": "Sample Post 3",
-      "imageUrl": "https://example.com/image3.jpg",
+      "imageUrl": "imgs/Strawberry.png",
       "description": "This is the description for the third post.",
       "tag": "Travel",
-      "downloadLink": "https://example.com/download3"
+      "downloadLink": "imgs/Strawberry.png"
     }
     
   ]
