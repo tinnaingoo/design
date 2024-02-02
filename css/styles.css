@@ -15,12 +15,13 @@ div#postList {
 }
 
 .post {
-    position: relative;
-    overflow: hidden;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    transition: transform 0.2s;
-    text-align: center;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    width: 350px;
+    background: #fff;
 }
 
 img {
