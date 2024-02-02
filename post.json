@@ -142,6 +142,29 @@
       "description": "This is the description for the second post.",
       "tag": "Technology",
       "downloadLink": "imgs/2_2_2024_17.png"
+    },    {
+      "id": 2,
+      "title": "Sample Post 2",
+      "imageUrl": "imgs/2_2_2024_18.png",
+      "description": "This is the description for the second post.",
+      "tag": "Technology",
+      "downloadLink": "imgs/2_2_2024_18.png"
+    },
+    {
+      "id": 2,
+      "title": "Sample Post 2",
+      "imageUrl": "imgs/2_2_2024_19.png",
+      "description": "This is the description for the second post.",
+      "tag": "Technology",
+      "downloadLink": "imgs/2_2_2024_19.png"
+    },
+    {
+      "id": 2,
+      "title": "Sample Post 2",
+      "imageUrl": "imgs/2_2_2024_20.png",
+      "description": "This is the description for the second post.",
+      "tag": "Technology",
+      "downloadLink": "imgs/2_2_2024_20.png"
     }
     
   ]
