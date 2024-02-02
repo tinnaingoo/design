@@ -18,7 +18,7 @@ div#postList {
 .post {
     padding: 0;
     background: #fff;
-    margin: 10px;
+    margin: 4px;
     break-inside: avoid;
   
 }
