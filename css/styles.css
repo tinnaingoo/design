@@ -14,7 +14,6 @@ div#postList {
     border: 2px solid #ddd;
     border-radius: 8px;
     transition: transform 0.2s;
-    display: flex;
     text-align: center;
 }
 
