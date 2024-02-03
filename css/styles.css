@@ -8,19 +8,36 @@ body {
     padding: 0px;
 }
 
-div#postList {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
-    column-count: 3; /* You can adjust the number of columns as needed */
-    column-gap: 10px;
+#postList {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 }
 
 .post {
-    padding: 0;
-    background: #fff;
-    margin: 4px;
-    break-inside: avoid;
-  
+  padding: 0;
+  background: #fff;
+  margin: 4px;
+  break-inside: avoid;
+}
+
+/* Media queries for responsive layout */
+@media screen and (max-width: 1200px) {
+  #postList {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #postList {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #postList {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
 }
 
 img {
