@@ -80,7 +80,7 @@
          postElement.innerHTML = `
            <div class="post" onclick="showPreview(${post.id})">
              <img src="${post.imageUrl}" width="100%">
-             <p id="imageSize">Image size: </p>
+             
              <p class="post-title">${post.title}</p>
              <p class="post-description">${post.description}</p>
              <button class="img-download" onClick="Download">Download</button>
@@ -90,15 +90,7 @@
          // Append the post element to the postListDiv
          postListDiv.appendChild(postElement);
 
-         // Access the image element within the postElement and display image size
-         var imgElement = postElement.querySelector('img');
-         var imageSizeParagraph = postElement.querySelector('.image-size');
-
-         imgElement.onload = function() {
-            var naturalWidth = imgElement.naturalWidth;
-            var naturalHeight = imgElement.naturalHeight;
-            imageSizeParagraph.innerText = 'Image size: ' + naturalWidth + ' x ' + naturalHeight;
-         };
+         
        });
      } catch (error) {
        console.error("Error loading posts:", error);
