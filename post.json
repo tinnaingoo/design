@@ -95,7 +95,8 @@
       "description": "Juice Lemon, lemon, natural Foods, food, citrus png",
       "tag": "Technology",
       "downloadLink": "imgs/2_2_2024_11.png"
-    },{
+    },
+    {
       "id": 2,
       "title": "Sample Post 2",
       "imageUrl": "imgs/2_2_2024_12.png",
@@ -142,7 +143,8 @@
       "description": "This is the description for the second post.",
       "tag": "Technology",
       "downloadLink": "imgs/2_2_2024_17.png"
-    },    {
+    },    
+    {
       "id": 2,
       "title": "Sample Post 2",
       "imageUrl": "imgs/2_2_2024_18.png",
@@ -285,7 +287,8 @@
       "description": "This is the description for the second post.",
       "tag": "Technology",
       "downloadLink": "imgs/3_2_2024_17.png"
-    },    {
+    },    
+    {
       "id": 2,
       "title": "Sample Post 2",
       "imageUrl": "imgs/3_2_2024_18.png",
