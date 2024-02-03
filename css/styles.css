@@ -10,8 +10,10 @@ body {
 
 #postList {
   display: grid;
-  gap: 10px;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  column-count: 3; /* You can adjust the number of columns as needed */
+  column-gap: 10px;
 }
 
 .post {
@@ -27,15 +29,8 @@ body {
     grid-template-columns: 1fr; /* Set to a single column for smaller screens */
     column-count: 1; /* Adjust column count for smaller screens */
   }
+}
 
-  .post {
-  padding: 0;
-  background: #fff;
-  margin: 4px;
-  break-inside: avoid;
-}
-      
-}
 
 img {
     width: 100%;
