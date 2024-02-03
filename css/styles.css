@@ -11,8 +11,7 @@ body {
 #postList {
   display: grid;
   gap: 10px;
-  column-gap: 10px; /* Adjust the gap between columns */
-  grid-template-columns: repeat(auto-fill);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
 }
 
 .post {
