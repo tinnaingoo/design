@@ -11,7 +11,8 @@ body {
 #postList {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  column-gap: 10px; /* Adjust the gap between columns */
+  grid-template-columns: repeat(auto-fill);
 }
 
 .post {
@@ -21,23 +22,20 @@ body {
   break-inside: avoid;
 }
 
-/* Media queries for responsive layout */
-@media screen and (max-width: 1200px) {
-  #postList {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  }
-}
-
-@media screen and (max-width: 992px) {
-  #postList {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
-}
-
+/* Media query for mobile devices */
 @media screen and (max-width: 767px) {
   #postList {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: 1fr; /* Set to a single column for smaller screens */
+    column-count: 1; /* Adjust column count for smaller screens */
   }
+
+  .post {
+  padding: 0;
+  background: #fff;
+  margin: 4px;
+  break-inside: avoid;
+}
+      
 }
 
 img {
