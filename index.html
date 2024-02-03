@@ -80,6 +80,7 @@
          postElement.innerHTML = `
            <div class="post" onclick="showPreview(${post.id})">
              <img src="${post.imageUrl}" width="100%">
+             <p id="imageSize">Image size: </p>
              <p class="post-title">${post.title}</p>
              <p class="post-description">${post.description}</p>
              <button class="img-download" onClick="Download">Download</button>
@@ -107,5 +108,25 @@
    window.onload = loadPosts;
 </script>
 
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the image element
+            var imgElement = document.getElementById('postImage');
+
+            // Get the natural width and height of the image
+            var naturalWidth = imgElement.naturalWidth;
+            var naturalHeight = imgElement.naturalHeight;
+
+            // Display the image size in the paragraph element
+            var imageSizeParagraph = document.getElementById('imageSize');
+            imageSizeParagraph.innerText += naturalWidth + ' x ' + naturalHeight;
+        });
+
+        function downloadImage() {
+            // Your download logic here
+            // For example, you can use window.location.href = post.imageUrl; or any other download mechanism
+        }
+    </script>
+   
 </body>
 </html>
