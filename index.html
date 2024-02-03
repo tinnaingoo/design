@@ -79,8 +79,10 @@
          var postElement = document.createElement("div");
          postElement.innerHTML = `
            <div class="post" onclick="showPreview(${post.id})">
-             <img src="${post.imageUrl}" alt="${post.title}" width="100%">
              <p>${post.title}</p>
+             <img src="${post.imageUrl}" width="100%">
+             <button class="img-download" onClick="Download">Download</button>
+             
            </div>
          `;
          postListDiv.appendChild(postElement);
