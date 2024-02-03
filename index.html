@@ -80,7 +80,8 @@
          postElement.innerHTML = `
            <div class="post" onclick="showPreview(${post.id})">
              <img src="${post.imageUrl}" width="100%">
-             <p class="post-description">${post.tag}</p>
+             <p class="post-title">${post.title}</p>
+             <p class="post-description">${post.description}</p>
              <button class="img-download" onClick="Download">Download</button>
              
            </div>
