@@ -1,22 +1,9 @@
-{
-    "posts": [
-        {
-            "id": 0,
-            "title": "Post 1",
-            "description": "Description of Post 1",
-            "imageUrl": "img/2_2_2024_1"
-        },
-        {
-            "id": 1,
-            "title": "Post 2",
-            "description": "Description of Post 2",
-            "imageUrl": "img/2_2_2024_2"
-        },
-        {
-            "id": 2,
-            "title": "Post 3",
-            "description": "Description of Post 3",
-            "imageUrl": "img/2_2_2024_3"
-        }
-    ]
-}
+data = '[
+    {"name" : "Riyaz"},
+    {"name" : "Javed"},
+    {"name" : "Arun"},
+    {"name" : "Sunil"},
+    {"name" : "Rahul"},
+    {"name" : "Anita"}
+
+]';
