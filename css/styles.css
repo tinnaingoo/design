@@ -13,6 +13,13 @@ body {
     flex-direction: row;
 }
 
+label {
+    color: yellow;
+    font-size: 13px;
+    font-family: system-ui;
+}
+
+
 .section{
     isplay: -ms-flexbox;
     display: -webkit-flex;
