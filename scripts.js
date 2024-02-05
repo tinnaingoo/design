@@ -8,13 +8,27 @@ document.addEventListener('DOMContentLoaded', function() {
             const titleElement = document.getElementById('title');
             const downloadButton = document.getElementById('download-button');
 
-            // Display the first title
-            titleElement.textContent = data[0].title;
+            // Loop through the JSON data and display titles
+            data.forEach((post, index) => {
+                // Create a <p> element for each title
+                const titleElement = document.createElement('p');
+                titleElement.textContent = `Key-${index}: ${post.title}`;
 
-            // Add a click event listener to the download button
-            downloadButton.addEventListener('click', function() {
-                // Open the URL of the first title in a new tab when the button is clicked
-                window.open(data[0].url, '_blank');
+                // Append the <p> element to the container
+                titlesContainer.appendChild(titleElement);
+
+                // Create a download button for each title
+                const downloadUrlButton = document.createElement('button');
+                downloadUrlButton.textContent = 'Download URL';
+
+                // Add a click event listener to the download button
+                downloadUrlButton.addEventListener('click', function() {
+                    // Open the URL of the current title in a new tab when the button is clicked
+                    window.open(post.url, '_blank');
+                });
+
+                // Append the download button to the container
+                titlesContainer.appendChild(downloadUrlButton);
             });
         })
         .catch(error => {
