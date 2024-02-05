@@ -66,11 +66,11 @@
 
             // Create FAQ sections dynamically
             data.forEach(item => {
-                createFaqSection(item.title, item.answer, item.img_url, faqSection);
+                createFaqSection(item.title, item.description, item.img_url, faqSection);
             });
 
             // Function to create FAQ sections dynamically
-            function createFaqSection(title, answer, imgUrl, container) {
+            function createFaqSection(title, description, imgUrl, container) {
                 // Create elements
                 var section = document.createElement('section');
                 var h1 = document.createElement('h1');
@@ -80,7 +80,7 @@
                 // Set content
                 h1.textContent = title;
                 img.src = imgUrl;
-                p.textContent = answer;
+                p.textContent = description;
 
                 // Append elements to the section
                 section.appendChild(h1);
@@ -103,7 +103,7 @@
 
                 // Create FAQ sections for filtered data
                 filteredData.forEach(item => {
-                    createFaqSection(item.title, item.answer, item.img_url, faqSection);
+                    createFaqSection(item.title, item.description, item.img_url, faqSection);
                 });
             };
         })
