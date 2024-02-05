@@ -82,14 +82,9 @@
 
                 // Set content
                 h1.textContent = title;
-
-               // Set a placeholder/loading image initially
-                img.src = 'imgs/placeholder.gif';
-                img.setAttribute('data-src', imgUrl); // Store actual image source in data attribute
-                img.addEventListener('load', function () {
-                    // Replace placeholder with actual image source when loaded
-                    img.src = this.getAttribute('data-src');
-                });
+               
+               //Set Image
+               img.src = imgUrl;
                
                 p.textContent = description;
 
