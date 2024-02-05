@@ -96,7 +96,7 @@
                 const searchInput = document.getElementById('searchInput').value.toLowerCase();
 
                 // Filter data based on search input
-                const filteredData = originalData.filter(item => item.title.toLowerCase().includes(searchInput));
+                const filteredData = originalData.filter(item => item.description.toLowerCase().includes(searchInput));
 
                 // Clear existing content in the FAQ section
                 faqSection.innerHTML = '';
