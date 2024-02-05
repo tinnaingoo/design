@@ -9,7 +9,8 @@ body {
     align-items: center;
     text-align: center;
     background: green;
-    padding: 20px;
+    padding: 10px;
+    flex-direction: row;
 }
 
 .section{
