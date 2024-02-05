@@ -1,302 +1,302 @@
 [
   {
     "title": "how to eat healthy?",
-    "answer": "Do not eat junk food!",
-    "img_url": "imgs/2_2_2024_1"
+    "description": "Do not eat junk food!",
+    "img_url": "imgs/2_2_2024_1.png"
   },
   {
     "title": "how to relax?",
-    "answer": "Go grab a coffee",
-    "img_url": "imgs/2_2_2024_2"
+    "description": "Go grab a coffee",
+    "img_url": "imgs/2_2_2024_2.png"
   },
   {
     "title": "favorite books",
-    "answer": "Read 'To Kill a Mockingbird'",
-    "img_url": "imgs/2_2_2024_3"
+    "description": "Read 'To Kill a Mockingbird'",
+    "img_url": "imgs/2_2_2024_3.png"
   },
   {
     "title": "best travel destination",
-    "answer": "Visit Kyoto, Japan",
-    "img_url": "imgs/2_2_2024_4"
+    "description": "Visit Kyoto, Japan",
+    "img_url": "imgs/2_2_2024_4.png"
   },
   {
     "title": "learning a language",
-    "answer": "Practice with Duolingo daily",
-    "img_url": "imgs/2_2_2024_5"
+    "description": "Practice with Duolingo daily",
+    "img_url": "imgs/2_2_2024_5.png"
   },
   {
     "title": "keeping fit",
-    "answer": "Engage in regular cardio exercises",
-    "img_url": "imgs/2_2_2024_6"
+    "description": "Engage in regular cardio exercises",
+    "img_url": "imgs/2_2_2024_6.png"
   },
   {
     "title": "effective study habits",
-    "answer": "Use the Pomodoro technique",
-    "img_url": "imgs/2_2_2024_7"
+    "description": "Use the Pomodoro technique",
+    "img_url": "imgs/2_2_2024_7.png"
   },
   {
     "title": "creative writing tips",
-    "answer": "Start with a captivating hook",
-    "img_url": "imgs/2_2_2024_8"
+    "description": "Start with a captivating hook",
+    "img_url": "imgs/2_2_2024_8.png"
   },
   {
     "title": "choosing a pet",
-    "answer": "Consider adopting a rescue animal",
-    "img_url": "imgs/2_2_2024_9"
+    "description": "Consider adopting a rescue animal",
+    "img_url": "imgs/2_2_2024_9.png"
   },
   {
     "title": "gardening advice",
-    "answer": "Plant herbs for a kitchen garden",
-    "img_url": "imgs/2_2_2024_10"
+    "description": "Plant herbs for a kitchen garden",
+    "img_url": "imgs/2_2_2024_10.png"
   },
   {
     "title": "budget-friendly recipes",
-    "answer": "Cook pasta with tomato sauce and veggies",
-    "img_url": "imgs/2_2_2024_11"
+    "description": "Cook pasta with tomato sauce and veggies",
+    "img_url": "imgs/2_2_2024_11.png"
   },
   {
     "title": "home office setup",
-    "answer": "Invest in an ergonomic chair",
-    "img_url": "imgs/2_2_2024_12"
+    "description": "Invest in an ergonomic chair",
+    "img_url": "imgs/2_2_2024_12.png"
   },
   {
     "title": "stress management",
-    "answer": "Practice mindfulness meditation",
-    "img_url": "imgs/2_2_2024_13"
+    "description": "Practice mindfulness meditation",
+    "img_url": "imgs/2_2_2024_13.png"
   },
   {
     "title": "DIY home decor",
-    "answer": "Create wall art with recycled materials",
-    "img_url": "imgs/2_2_2024_14"
+    "description": "Create wall art with recycled materials",
+    "img_url": "imgs/2_2_2024_14.png"
   },
   {
     "title": "family bonding activities",
-    "answer": "Have a weekly game night",
-    "img_url": "imgs/2_2_2024_15"
+    "description": "Have a weekly game night",
+    "img_url": "imgs/2_2_2024_15.png"
   },
   {
     "title": "improving focus",
-    "answer": "Minimize multitasking",
-    "img_url": "imgs/2_2_2024_16"
+    "description": "Minimize multitasking",
+    "img_url": "imgs/2_2_2024_16.png"
   },
   {
     "title": "digital photography tips",
-    "answer": "Experiment with different angles",
-    "img_url": "imgs/2_2_2024_17"
+    "description": "Experiment with different angles",
+    "img_url": "imgs/2_2_2024_17.png"
   },
   {
     "title": "learning to code",
-    "answer": "Start with Python programming",
-    "img_url": "imgs/2_2_2024_18"
+    "description": "Start with Python programming",
+    "img_url": "imgs/2_2_2024_18.png"
   },
   {
     "title": "mind-bending movies",
-    "answer": "Watch 'Inception'",
-    "img_url": "imgs/2_2_2024_19"
+    "description": "Watch 'Inception'",
+    "img_url": "imgs/2_2_2024_19.png"
   },
   {
     "title": "home workout routines",
-    "answer": "Incorporate bodyweight exercises",
-    "img_url": "imgs/2_2_2024_20"
+    "description": "Incorporate bodyweight exercises",
+    "img_url": "imgs/2_2_2024_20.png"
   },
   {
     "title": "outdoor adventure ideas",
-    "answer": "Go kayaking in a nearby lake",
-    "img_url": "imgs/3_2_2024_1"
+    "description": "Go kayaking in a nearby lake",
+    "img_url": "imgs/3_2_2024_1.png"
   },
   {
     "title": "interior design basics",
-    "answer": "Focus on color coordination",
-    "img_url": "imgs/3_2_2024_2"
+    "description": "Focus on color coordination",
+    "img_url": "imgs/3_2_2024_2.png"
   },
   {
     "title": "mind-expanding books",
-    "answer": "Read 'Sapiens' by Yuval Noah Harari",
-    "img_url": "imgs/3_2_2024_3"
+    "description": "Read 'Sapiens' by Yuval Noah Harari",
+    "img_url": "imgs/3_2_2024_3.png"
   },
   {
     "title": "classic movies to watch",
-    "answer": "View 'Casablanca'",
-    "img_url": "imgs/3_2_2024_4"
+    "description": "View 'Casablanca'",
+    "img_url": "imgs/3_2_2024_4.png"
   },
   {
     "title": "effective communication",
-    "answer": "Practice active listening",
-    "img_url": "imgs/3_2_2024_5"
+    "description": "Practice active listening",
+    "img_url": "imgs/3_2_2024_5.png"
   },
   {
     "title": "adopting a minimalist lifestyle",
-    "answer": "Declutter your living space",
-    "img_url": "imgs/3_2_2024_6"
+    "description": "Declutter your living space",
+    "img_url": "imgs/3_2_2024_6.png"
   },
   {
     "title": "essential camping gear",
-    "answer": "Pack a durable tent and sleeping bag",
-    "img_url": "imgs/3_2_2024_7"
+    "description": "Pack a durable tent and sleeping bag",
+    "img_url": "imgs/3_2_2024_7.png"
   },
   {
     "title": "baking for beginners",
-    "answer": "Start with chocolate chip cookies",
-    "img_url": "imgs/3_2_2024_8"
+    "description": "Start with chocolate chip cookies",
+    "img_url": "imgs/3_2_2024_8.png"
   },
   {
     "title": "self-reflection practices",
-    "answer": "Journal your thoughts daily",
-    "img_url": "imgs/3_2_2024_9"
+    "description": "Journal your thoughts daily",
+    "img_url": "imgs/3_2_2024_9.png"
   },
   {
     "title": "improving posture",
-    "answer": "Sit up straight and stretch regularly",
-    "img_url": "imgs/3_2_2024_10"
+    "description": "Sit up straight and stretch regularly",
+    "img_url": "imgs/3_2_2024_10.png"
   },
   {
     "title": "budget travel tips",
-    "answer": "Use public transportation",
-    "img_url": "imgs/3_2_2024_11"
+    "description": "Use public transportation",
+    "img_url": "imgs/3_2_2024_11.png"
   },
   {
     "title": "mindful eating habits",
-    "answer": "Chew food slowly and savor each bite",
-    "img_url": "imgs/3_2_2024_12"
+    "description": "Chew food slowly and savor each bite",
+    "img_url": "imgs/3_2_2024_12.png"
   },
   {
     "title": "caring for indoor plants",
-    "answer": "Water according to plant species",
-    "img_url": "imgs/3_2_2024_13"
+    "description": "Water according to plant species",
+    "img_url": "imgs/3_2_2024_13.png"
   },
   {
     "title": "maintaining a skincare routine",
-    "answer": "Cleanse, tone, and moisturize daily",
-    "img_url": "imgs/3_2_2024_14"
+    "description": "Cleanse, tone, and moisturize daily",
+    "img_url": "imgs/3_2_2024_14.png"
   },
   {
     "title": "learning to play an instrument",
-    "answer": "Start with a ukulele",
-    "img_url": "imgs/3_2_2024_15"
+    "description": "Start with a ukulele",
+    "img_url": "imgs/3_2_2024_15.png"
   },
   {
     "title": "effective time management",
-    "answer": "Use a productivity app",
-    "img_url": "imgs/3_2_2024_16"
+    "description": "Use a productivity app",
+    "img_url": "imgs/3_2_2024_16.png"
   },
   {
     "title": "mind-challenging puzzles",
-    "answer": "Solve Sudoku regularly",
-    "img_url": "imgs/3_2_2024_17"
+    "description": "Solve Sudoku regularly",
+    "img_url": "imgs/3_2_2024_17.png"
   },
   {
     "title": "building a reading habit",
-    "answer": "Set aside dedicated reading time",
-    "img_url": "imgs/3_2_2024_18"
+    "description": "Set aside dedicated reading time",
+    "img_url": "imgs/3_2_2024_18.png"
   },
   {
     "title": "creating a budget",
-    "answer": "Track expenses and prioritize needs",
-    "img_url": "imgs/3_2_2024_19"
+    "description": "Track expenses and prioritize needs",
+    "img_url": "imgs/3_2_2024_19.png"
   },
   {
     "title": "meal prepping for the week",
-    "answer": "Plan nutritious and balanced meals",
-    "img_url": "imgs/3_2_2024_20"
+    "description": "Plan nutritious and balanced meals",
+    "img_url": "imgs/3_2_2024_20.png"
   },
   {
     "title": "DIY skincare masks",
-    "answer": "Use honey and yogurt for a hydrating mask",
-    "img_url": "imgs/4_2_2024_1"
+    "description": "Use honey and yogurt for a hydrating mask",
+    "img_url": "imgs/4_2_2024_1.png"
   },
   {
     "title": "essential kitchen gadgets",
-    "answer": "Invest in a quality chef's knife",
-    "img_url": "imgs/4_2_2024_2"
+    "description": "Invest in a quality chef's knife",
+    "img_url": "imgs/4_2_2024_2.png"
   },
   {
     "title": "effective public speaking",
-    "answer": "Practice in front of a mirror",
-    "img_url": "imgs/4_2_2024_3"
+    "description": "Practice in front of a mirror",
+    "img_url": "imgs/4_2_2024_3.png"
   },
   {
     "title": "mind-soothing music",
-    "answer": "Listen to instrumental tracks",
-    "img_url": "imgs/4_2_2024_4"
+    "description": "Listen to instrumental tracks",
+    "img_url": "imgs/4_2_2024_4.png"
   },
   {
     "title": "beginner painting techniques",
-    "answer": "Experiment with acrylics on canvas",
-    "img_url": "imgs/4_2_2024_5"
+    "description": "Experiment with acrylics on canvas",
+    "img_url": "imgs/4_2_2024_5.png"
   },
   {
     "title": "sustainable living tips",
-    "answer": "Reduce single-use plastic consumption",
-    "img_url": "imgs/4_2_2024_6"
+    "description": "Reduce single-use plastic consumption",
+    "img_url": "imgs/4_2_2024_6.png"
   },
   {
     "title": "healthy snack alternatives",
-    "answer": "Choose nuts and fruits over chips",
-    "img_url": "imgs/4_2_2024_7"
+    "description": "Choose nuts and fruits over chips",
+    "img_url": "imgs/4_2_2024_7.png"
   },
   {
     "title": "building positive habits",
-    "answer": "Start with small, achievable goals",
-    "img_url": "imgs/4_2_2024_8"
+    "description": "Start with small, achievable goals",
+    "img_url": "imgs/4_2_2024_8.png"
   },
   {
     "title": "effective email communication",
-    "answer": "Use clear and concise language",
-    "img_url": "imgs/4_2_2024_9"
+    "description": "Use clear and concise language",
+    "img_url": "imgs/4_2_2024_9.png"
   },
   {
     "title": "creative podcast ideas",
-    "answer": "Explore historical mysteries",
-    "img_url": "imgs/4_2_2024_10"
+    "description": "Explore historical mysteries",
+    "img_url": "imgs/4_2_2024_10.png"
   },
   {
     "title": "home organization hacks",
-    "answer": "Label storage bins for easy access",
-    "img_url": "imgs/4_2_2024_11"
+    "description": "Label storage bins for easy access",
+    "img_url": "imgs/4_2_2024_11.png"
   },
   {
     "title": "mindfulness exercises",
-    "answer": "Practice deep breathing",
-    "img_url": "imgs/4_2_2024_12"
+    "description": "Practice deep breathing",
+    "img_url": "imgs/4_2_2024_12.png"
   },
   {
     "title": "upcycling projects",
-    "answer": "Turn old jars into candle holders",
-    "img_url": "imgs/4_2_2024_13"
+    "description": "Turn old jars into candle holders",
+    "img_url": "imgs/4_2_2024_13.png"
   },
   {
     "title": "choosing a career path",
-    "answer": "Consider your passion and skills",
-    "img_url": "imgs/4_2_2024_14"
+    "description": "Consider your passion and skills",
+    "img_url": "imgs/4_2_2024_14.png"
   },
   {
     "title": "unique travel experiences",
-    "answer": "Stay in a treehouse accommodation",
-    "img_url": "imgs/4_2_2024_15"
+    "description": "Stay in a treehouse accommodation",
+    "img_url": "imgs/4_2_2024_15.png"
   },
   {
     "title": "captivating short stories",
-    "answer": "Explore the works of Edgar Allan Poe",
-    "img_url": "imgs/4_2_2024_16"
+    "description": "Explore the works of Edgar Allan Poe",
+    "img_url": "imgs/4_2_2024_16.png"
   },
   {
     "title": "DIY home spa day",
-    "answer": "Create a soothing face mask with oatmeal",
-    "img_url": "imgs/4_2_2024_17"
+    "description": "Create a soothing face mask with oatmeal",
+    "img_url": "imgs/4_2_2024_17.png"
   },
   {
     "title": "mind-boggling optical illusions",
-    "answer": "View 'The Dress' illusion",
-    "img_url": "imgs/4_2_2024_18"
+    "description": "View 'The Dress' illusion",
+    "img_url": "imgs/4_2_2024_18.png"
   },
   {
     "title": "outdoor photography tips",
-    "answer": "Capture the golden hour light",
-    "img_url": "imgs/4_2_2024_19"
+    "description": "Capture the golden hour light",
+    "img_url": "imgs/4_2_2024_19.png"
   },
   {
     "title": "building resilience",
-    "answer": "Learn from setbacks and challenges",
-    "img_url": "imgs/4_2_2024_20"
+    "description": "Learn from setbacks and challenges",
+    "img_url": "imgs/4_2_2024_20.png"
   }
 ]
