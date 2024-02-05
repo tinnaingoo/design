@@ -36,11 +36,31 @@ body {
 /**1025px — 1200px: Desktops, large screens**/
 /**1201px and more —  Extra large screens, TV**/
 
+@media screen and (max-width: 1200px) {
+  #faqSection {
+    column-count: 5; /* You can adjust the number of columns as needed */
+    column-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #faqSection {
+    column-count: 4; /* You can adjust the number of columns as needed */
+    column-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #faqSection {
+    column-count: 2; /* You can adjust the number of columns as needed */
+    column-gap: 10px;
+  }
+}
 
 
 /* Media query for mobile devices */
-@media screen and (max-width: 767px) {
-  #postList {
+@media screen and (max-width: 480px) {
+  #faqSection {
     grid-template-columns: 1fr; /* Set to a single column for smaller screens */
     column-count: 1; /* Adjust column count for smaller screens */
   }
