@@ -3,7 +3,12 @@ body {
       font-family: Arial, Helvetica, sans-serif;
     }
 
-.container {
+#section  {
+  column-count: 3; /* You can adjust the number of columns as needed */
+  column-gap: 10px;
+}
+
+.section#faqSection {
     isplay: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -14,10 +19,7 @@ body {
     align-items: center;
 }
 
-#section  {
-  column-count: 3; /* You can adjust the number of columns as needed */
-  column-gap: 10px;
-}
+
 
 .post {
   padding: 0;
