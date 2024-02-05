@@ -1,14 +1,22 @@
-[
-   {
-      "title": "English",
-      "url": "https://www.kindpng.com/"
-   },
-   {
-      "title": "English (1)",
-      "url": "https://www.kindpng.com/"
-   },
-   {
-      "title": "English (2)",
-      "url": "https://www.kindpng.com/"
-   }
-]
+{
+    "posts": [
+        {
+            "id": 0,
+            "title": "Post 1",
+            "description": "Description of Post 1",
+            "imageUrl": "https://example.com/image1.jpg"
+        },
+        {
+            "id": 1,
+            "title": "Post 2",
+            "description": "Description of Post 2",
+            "imageUrl": "https://example.com/image2.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Post 3",
+            "description": "Description of Post 3",
+            "imageUrl": "https://example.com/image3.jpg"
+        }
+    ]
+}
