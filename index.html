@@ -1,82 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!doctype html>
+<html>
+    <head>
+        <script type="text/javascript" src="abc.json"></script>
+        <script type="text/javascript" >
+            function load() {
+                var mydata = JSON.parse(data);
+                alert(mydata.length);
 
-   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-   <link rel="manifest" href="favicon/site.webmanifest">
+                var div = document.getElementById('data');
 
-   
-   <link rel="stylesheet" href="css/topnav.css">
-   <link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/ad-styles.css">
-   <link rel="stylesheet" href="css/styles.css">
-   
+                for(var i = 0;i < mydata.length; i++)
+                {
+                    div.innerHTML = div.innerHTML + "<p class='inner' id="+i+">"+ mydata[i].name +"</p>" + "<br>";
+                }
+            }
+        </script>
+    </head>
+    <body onload="load()">
+        <div id="data">
 
-   <title>Computer Technology and Knowledge Sharing</title>
-</head>
-
-<body>
-
-    <div id="posts-container"></div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Fetch the JSON data from posts.json
-            fetch('posts.json')
-                .then(response => response.json())
-                .then(data => {
-                    // Get the container element for posts
-                    const postsContainer = document.getElementById('posts-container');
-
-                    // Loop through the JSON data and create post elements
-                    data.posts.forEach(function(post) {
-                        // Create a container for each post
-                        var postElement = document.createElement("div");
-                        postElement.innerHTML = `
-                            <div class="post" onclick="showPreview(${post.id})">
-                                <img src="${post.imageUrl}" width="100%">
-                                <p class="post-title">${post.title}</p>
-                                <p class="post-description">${post.description}</p>
-                                <p class="image-size">Image size: </p>
-                                <button class="img-download" onclick="downloadImage('${post.imageUrl}', '${post.title}')">Download</button>
-                            </div>`;
-
-                        // Append the post container to the postsContainer
-                        postsContainer.appendChild(postElement);
-                    });
-                })
-                .catch(error => {
-                    console.error('Error fetching JSON:', error);
-                });
-        });
-
-        // Function to show post preview
-        function showPreview(postId) {
-            // Implement the logic for showing post preview, if needed
-            console.log('Show preview for post with ID:', postId);
-        }
-
-        // Function to download the image
-        function downloadImage(imageUrl, title) {
-            // Customize the filename, e.g., using the post title
-            var fileName = title.replace(/\s/g, '_') + '.jpg';
-
-            // Create an anchor element to trigger the download
-            var downloadLink = document.createElement('a');
-            downloadLink.href = imageUrl;
-            downloadLink.download = fileName;
-
-            // Append the anchor element to the document and trigger the click event
-            document.body.appendChild(downloadLink);
-            downloadLink.click();
-
-            // Remove the anchor element from the document
-            document.body.removeChild(downloadLink);
-        }
-    </script>
-</body>
+        </div>
+    </body>
 </html>
