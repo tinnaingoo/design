@@ -1,4 +1,4 @@
-data = '[
+[
     {"name" : "Riyaz"},
     {"name" : "Javed"},
     {"name" : "Arun"},
@@ -6,4 +6,4 @@ data = '[
     {"name" : "Rahul"},
     {"name" : "Anita"}
 
-]';
+]
