@@ -15,7 +15,7 @@ body {
 }
 
 #faqSection  {
-  column-count: 3; /* You can adjust the number of columns as needed */
+  column-count: 5; /* You can adjust the number of columns as needed */
   column-gap: 10px;
 }
 
