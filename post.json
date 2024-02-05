@@ -1,11 +1,306 @@
 [
-    {
-        "title": "how to eat healthy?",
-        "answer": "Do no eat junk food!"
-    },
-
-    {
-        "title": "how to relax?",
-        "answer": "Go to grab a coffee"
-    }
+  {
+    "title": "how to eat healthy?",
+    "answer": "Do not eat junk food!"
+  },
+  {
+    "title": "how to relax?",
+    "answer": "Go grab a coffee"
+  },
+  {
+    "title": "favorite books",
+    "answer": "Read 'To Kill a Mockingbird'"
+  },
+  {
+    "title": "best travel destination",
+    "answer": "Visit Kyoto, Japan"
+  },
+  {
+    "title": "learning a language",
+    "answer": "Practice with Duolingo daily"
+  },
+  {
+    "title": "keeping fit",
+    "answer": "Engage in regular cardio exercises"
+  },
+  {
+    "title": "effective study habits",
+    "answer": "Use the Pomodoro technique"
+  },
+  {
+    "title": "creative writing tips",
+    "answer": "Start with a captivating hook"
+  },
+  {
+    "title": "choosing a pet",
+    "answer": "Consider adopting a rescue animal"
+  },
+  {
+    "title": "gardening advice",
+    "answer": "Plant herbs for a kitchen garden"
+  },
+  {
+    "title": "budget-friendly recipes",
+    "answer": "Cook pasta with tomato sauce and veggies"
+  },
+  {
+    "title": "home office setup",
+    "answer": "Invest in an ergonomic chair"
+  },
+  {
+    "title": "stress management",
+    "answer": "Practice mindfulness meditation"
+  },
+  {
+    "title": "DIY home decor",
+    "answer": "Create wall art with recycled materials"
+  },
+  {
+    "title": "family bonding activities",
+    "answer": "Have a weekly game night"
+  },
+  {
+    "title": "improving focus",
+    "answer": "Minimize multitasking"
+  },
+  {
+    "title": "digital photography tips",
+    "answer": "Experiment with different angles"
+  },
+  {
+    "title": "learning to code",
+    "answer": "Start with Python programming"
+  },
+  {
+    "title": "mind-bending movies",
+    "answer": "Watch 'Inception'"
+  },
+  {
+    "title": "home workout routines",
+    "answer": "Incorporate bodyweight exercises"
+  },
+  {
+    "title": "outdoor adventure ideas",
+    "answer": "Go kayaking in a nearby lake"
+  },
+  {
+    "title": "interior design basics",
+    "answer": "Focus on color coordination"
+  },
+  {
+    "title": "mind-expanding books",
+    "answer": "Read 'Sapiens' by Yuval Noah Harari"
+  },
+  {
+    "title": "classic movies to watch",
+    "answer": "View 'Casablanca'"
+  },
+  {
+    "title": "effective communication",
+    "answer": "Practice active listening"
+  },
+  {
+    "title": "adopting a minimalist lifestyle",
+    "answer": "Declutter your living space"
+  },
+  {
+    "title": "essential camping gear",
+    "answer": "Pack a durable tent and sleeping bag"
+  },
+  {
+    "title": "baking for beginners",
+    "answer": "Start with chocolate chip cookies"
+  },
+  {
+    "title": "self-reflection practices",
+    "answer": "Journal your thoughts daily"
+  },
+  {
+    "title": "improving posture",
+    "answer": "Sit up straight and stretch regularly"
+  },
+  {
+    "title": "budget travel tips",
+    "answer": "Use public transportation"
+  },
+  {
+    "title": "mindful eating habits",
+    "answer": "Chew food slowly and savor each bite"
+  },
+  {
+    "title": "caring for indoor plants",
+    "answer": "Water according to plant species"
+  },
+  {
+    "title": "maintaining a skincare routine",
+    "answer": "Cleanse, tone, and moisturize daily"
+  },
+  {
+    "title": "learning to play an instrument",
+    "answer": "Start with a ukulele"
+  },
+  {
+    "title": "effective time management",
+    "answer": "Use a productivity app"
+  },
+  {
+    "title": "mind-challenging puzzles",
+    "answer": "Solve Sudoku regularly"
+  },
+  {
+    "title": "building a reading habit",
+    "answer": "Set aside dedicated reading time"
+  },
+  {
+    "title": "creating a budget",
+    "answer": "Track expenses and prioritize needs"
+  },
+  {
+    "title": "meal prepping for the week",
+    "answer": "Plan nutritious and balanced meals"
+  },
+  {
+    "title": "DIY skincare masks",
+    "answer": "Use honey and yogurt for a hydrating mask"
+  },
+  {
+    "title": "essential kitchen gadgets",
+    "answer": "Invest in a quality chef's knife"
+  },
+  {
+    "title": "effective public speaking",
+    "answer": "Practice in front of a mirror"
+  },
+  {
+    "title": "mind-soothing music",
+    "answer": "Listen to instrumental tracks"
+  },
+  {
+    "title": "beginner painting techniques",
+    "answer": "Experiment with acrylics on canvas"
+  },
+  {
+    "title": "sustainable living tips",
+    "answer": "Reduce single-use plastic consumption"
+  },
+  {
+    "title": "healthy snack alternatives",
+    "answer": "Choose nuts and fruits over chips"
+  },
+  {
+    "title": "building positive habits",
+    "answer": "Start with small, achievable goals"
+  },
+  {
+    "title": "effective email communication",
+    "answer": "Use clear and concise language"
+  },
+  {
+    "title": "creative podcast ideas",
+    "answer": "Explore historical mysteries"
+  },
+  {
+    "title": "home organization hacks",
+    "answer": "Label storage bins for easy access"
+  },
+  {
+    "title": "mindfulness exercises",
+    "answer": "Practice deep breathing"
+  },
+  {
+    "title": "upcycling projects",
+    "answer": "Turn old jars into candle holders"
+  },
+  {
+    "title": "choosing a career path",
+    "answer": "Consider your passion and skills"
+  },
+  {
+    "title": "unique travel experiences",
+    "answer": "Stay in a treehouse accommodation"
+  },
+  {
+    "title": "captivating short stories",
+    "answer": "Explore the works of Edgar Allan Poe"
+  },
+  {
+    "title": "DIY home spa day",
+    "answer": "Create a soothing face mask with oatmeal"
+  },
+  {
+    "title": "mind-boggling optical illusions",
+    "answer": "View 'The Dress' illusion"
+  },
+  {
+    "title": "outdoor photography tips",
+    "answer": "Capture the golden hour light"
+  },
+  {
+    "title": "building resilience",
+    "answer": "Learn from setbacks and challenges"
+  },
+  {
+    "title": "memorable road trip destinations",
+    "answer": "Drive along the Pacific Coast Highway"
+  },
+  {
+    "title": "DIY home workout equipment",
+    "answer": "Make a kettlebell with a sturdy bag and sand"
+  },
+  {
+    "title": "mind-stimulating board games",
+    "answer": "Play 'Settlers of Catan'"
+  },
+  {
+    "title": "expressing gratitude",
+    "answer": "Keep a daily gratitude journal"
+  },
+  {
+    "title": "captivating documentaries",
+    "answer": "Watch 'Planet Earth'"
+  },
+  {
+    "title": "healthy smoothie recipes",
+    "answer": "Blend spinach, banana, and almond milk"
+  },
+  {
+    "title": "learning photography composition",
+    "answer": "Focus on the rule of thirds"
+  },
+  {
+    "title": "mindful walking",
+    "answer": "Pay attention to each step and breath"
+  },
+  {
+    "title": "developing a green thumb",
+    "answer": "Start with easy-to-care-for plants"
+  },
+  {
+    "title": "effective team collaboration",
+    "answer": "Communicate openly and respectfully"
+  },
+  {
+    "title": "cultural immersion experiences",
+    "answer": "Attend local festivals and events"
+  },
+  {
+    "title": "stress-relieving hobbies",
+    "answer": "Try adult coloring books"
+  },
+  {
+    "title": "innovative tech gadgets",
+    "answer": "Explore virtual reality headsets"
+  },
+  {
+    "title": "mindful morning routines",
+    "answer": "Start the day with a gratitude practice"
+  },
+  {
+    "title": "budget-friendly home decor",
+    "answer": "Upcycle old furniture with paint"
+  },
+  {
+    "title": "healthy breakfast options",
+    "answer": "Prepare overnight oats with fruits"
+  }
 ]
