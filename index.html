@@ -10,6 +10,12 @@
             text-align: center;
             margin-top: 20px;
         }
+
+        .faq--container img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -46,22 +52,25 @@
 
             // Create FAQ sections dynamically
             data.forEach(item => {
-                createFaqSection(item.title, item.answer, faqSection);
+                createFaqSection(item.title, item.answer, item.img_url, faqSection);
             });
 
             // Function to create FAQ sections dynamically
-            function createFaqSection(title, answer, container) {
+            function createFaqSection(title, answer, imgUrl, container) {
                 // Create elements
                 var section = document.createElement('section');
                 var h1 = document.createElement('h1');
+                var img = document.createElement('img');
                 var p = document.createElement('p');
 
                 // Set content
                 h1.textContent = title;
+                img.src = imgUrl;
                 p.textContent = answer;
 
                 // Append elements to the section
                 section.appendChild(h1);
+                section.appendChild(img);
                 section.appendChild(p);
 
                 // Append section to the specified container
@@ -80,7 +89,7 @@
 
                 // Create FAQ sections for filtered data
                 filteredData.forEach(item => {
-                    createFaqSection(item.title, item.answer, faqSection);
+                    createFaqSection(item.title, item.answer, item.img_url, faqSection);
                 });
             };
         })
