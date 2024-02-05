@@ -1,9 +1,11 @@
 [
-    {"name" : "Riyaz"},
-    {"name" : "Javed"},
-    {"name" : "Arun"},
-    {"name" : "Sunil"},
-    {"name" : "Rahul"},
-    {"name" : "Anita"}
+    {
+        "title": "how to eat healthy?",
+        "answer": "Do no eat junk food!"
+    },
 
+    {
+        "title": "how to relax?",
+        "answer": "Go to grab a coffee"
+    }
 ]
