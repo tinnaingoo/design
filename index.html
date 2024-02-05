@@ -1,24 +1,46 @@
-<!doctype html>
-<html>
-    <head>
-        <script type="text/javascript" src="abc.json"></script>
-        <script type="text/javascript" >
-            function load() {
-                var mydata = JSON.parse(data);
-                alert(mydata.length);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+</head>
+<body>
 
-                var div = document.getElementById('data');
+<div class="faq--container"></div>
 
-                for(var i = 0;i < mydata.length; i++)
-                {
-                    div.innerHTML = div.innerHTML + "<p class='inner' id="+i+">"+ mydata[i].name +"</p>" + "<br>";
-                }
-            }
-        </script>
-    </head>
-    <body onload="load()">
-        <div id="data">
+<script>
+    // Fetch data from post.json
+    fetch('post.json')
+        .then(response => response.json())
+        .then(data => {
+            // Iterate through the data and create sections dynamically
+            data.forEach(item => {
+                createFaqSection(item.title, item.answer);
+            });
+        })
+        .catch(error => console.error('Error fetching data:', error));
 
-        </div>
-    </body>
+    // Function to create FAQ sections dynamically
+    function createFaqSection(title, answer) {
+        // Create elements
+        var faqContainer = document.querySelector('.faq--container');
+        var section = document.createElement('section');
+        var h1 = document.createElement('h1');
+        var p = document.createElement('p');
+
+        // Set content
+        h1.textContent = title;
+        p.textContent = answer;
+
+        // Append elements to the section
+        section.appendChild(h1);
+        section.appendChild(p);
+
+        // Append section to the faqContainer
+        faqContainer.appendChild(section);
+    }
+</script>
+
+</body>
 </html>
