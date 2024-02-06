@@ -10,8 +10,12 @@ body {
 
 
 .search {
+    text-align: center;
+    background: gray;
+    padding: 10px;}
 
-      input {
+      
+.search input {
     width: 265px;
     border: 1px solid #ccc;
     padding: 8px;
@@ -21,14 +25,14 @@ body {
     margin: 3px;
     }
         
-  .fix-search & {
+.search .fix-search & {
     position: fixed;
     top: 10px;
     input {
       width: 250px;
     }
   }
-}
+
 
 .top {
   height: 250px;
