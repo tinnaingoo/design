@@ -13,10 +13,10 @@ body {
 
 
 .search {
-  position: absolute;
   top: 155px;
   left: 20px;
   right: 20px;
+      
   input {
     width: 265px;
     border: 1px solid #ccc;
@@ -24,7 +24,9 @@ body {
     font-size: 15px;
     transition: width 0.2s;
     -webkit-appearance: none;
-  }
+    margin: 3px;
+    }
+        
   .fix-search & {
     position: fixed;
     top: 10px;
