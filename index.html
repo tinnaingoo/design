@@ -82,118 +82,133 @@ wrap.on("scroll", function(e) {
    
 <div class="loading" id="loading">Loading...</div>
 
-  <div class="faq--container">
-    <section class="faq--01" id="faqSection">
-        <!-- Content will be dynamically added here -->
-    </section>
-    <p id="noResultsMessage" style="text-align: center; display: none;">No results found.</p>
-  </div>
+   <div class="faq--container" id="faqContainer">
+       <section class="faq--01" id="faqSection">
+           <!-- Content will be dynamically added here -->
+       </section>
 
-  <script>
-    // Show loading state
-    document.getElementById('loading').style.display = 'block';
+       <!-- Pagination -->
+       <div class="pagination" id="paginationContainer">
+           <!-- Pagination buttons will be dynamically added here -->
+       </div>
+   </div>
 
-    // Fetch data from post.json
-    fetch('post.json')
-        .then(response => response.json())
-        .then(data => {
-            // Hide loading state
-            document.getElementById('loading').style.display = 'none';
+   <!-- Your existing HTML content goes here -->
 
-            // Store original data for filtering
-            const originalData = data;
+   <script>
+       // Show loading state
+       document.getElementById('loading').style.display = 'block';
 
-            // Initialize FAQ section
-            const faqSection = document.getElementById('faqSection');
-            const noResultsMessage = document.getElementById('noResultsMessage');
+       // Fetch data from post.json
+       fetch('post.json')
+           .then(response => response.json())
+           .then(data => {
+               // Hide loading state
+               document.getElementById('loading').style.display = 'none';
 
-            // Create FAQ sections dynamically
-            data.forEach(item => {
-                createFaqSection(item.title, item.description, item.img_url, faqSection);
-            });
+               // Store original data for pagination
+               const originalData = data;
 
-            // Function to create FAQ sections dynamically
-            function createFaqSection(title, description, imgUrl, container) {
-                // Create elements
-                var section = document.createElement('section');
-                var h1 = document.createElement('h1');
-                var img = document.createElement('img');
-                var p = document.createElement('p');
+               // Initialize FAQ section and pagination container
+               const faqSection = document.getElementById('faqSection');
+               const paginationContainer = document.getElementById('paginationContainer');
 
-                // Set content
-                h1.textContent = title;
+               // Initialize pagination variables
+               const itemsPerPage = 30;
+               let currentPage = 1;
+               const totalPages = Math.ceil(originalData.length / itemsPerPage);
 
-                // Set Image
-                img.src = imgUrl;
+               // Function to display items for the current page
+               function displayItems(page) {
+                   // Clear existing content in the FAQ section
+                   faqSection.innerHTML = '';
 
-                p.textContent = description;
+                   // Calculate start and end indexes for the current page
+                   const startIndex = (page - 1) * itemsPerPage;
+                   const endIndex = startIndex + itemsPerPage;
 
-                // Append elements to the section
-                section.appendChild(h1);
-                section.appendChild(img);
-                section.appendChild(p);
+                   // Slice the original data to get items for the current page
+                   const pageItems = originalData.slice(startIndex, endIndex);
 
-                // Append section to the specified container
-                container.appendChild(section);
-            }
+                   // Create FAQ sections for items on the current page
+                   pageItems.forEach(item => {
+                       createFaqSection(item.title, item.description, item.img_url, faqSection);
+                   });
+               }
 
-            // Function to filter FAQs based on search input
-            window.filterFAQs = function () {
-                const searchInput = document.getElementById('searchInput').value.toLowerCase();
+               // Function to create FAQ sections dynamically
+               function createFaqSection(title, description, imgUrl, container) {
+                   // Create elements
+                   var section = document.createElement('section');
+                   var h1 = document.createElement('h1');
+                   var img = document.createElement('img');
+                   var p = document.createElement('p');
 
-                // Filter data based on search input
-                const filteredData = originalData.filter(item => item.description.toLowerCase().includes(searchInput));
+                   // Set content
+                   h1.textContent = title;
+                   img.src = imgUrl;
+                   p.textContent = description;
 
-                // Clear existing content in the FAQ section
-                faqSection.innerHTML = '';
-                noResultsMessage.style.display = 'none';
+                   // Append elements to the section
+                   section.appendChild(h1);
+                   section.appendChild(img);
+                   section.appendChild(p);
 
-                // Create FAQ sections for filtered data
-                if (filteredData.length > 0) {
-                    filteredData.forEach(item => {
-                        createFaqSection(item.title, item.description, item.img_url, faqSection);
-                    });
-                } else {
-                    // Display no results message
-                    noResultsMessage.style.display = 'block';
-                }
-            };
-        })
-        .catch(error => {
-            // Handle error and hide loading state
-            console.error('Error fetching data:', error);
-            document.getElementById('loading').style.display = 'none';
-        });
-  </script>
+                   // Append section to the specified container
+                   container.appendChild(section);
+               }
 
-   <!-- Back-to-top button -->
-    <button class="back-to-top" onclick="scrollToTop()" title="Go to top">
-        <i class="fa fa-arrow-up"></i>
-    </button>
+               // Function to create pagination buttons dynamically
+               function createPaginationButtons() {
+                   // Clear existing pagination buttons
+                   paginationContainer.innerHTML = '';
 
-    <!-- Your existing HTML content goes here -->
+                   // Create previous button
+                   const prevButton = document.createElement('button');
+                   prevButton.textContent = 'Previous';
+                   prevButton.classList.add('pagination-button');
+                   prevButton.disabled = currentPage === 1;
+                   prevButton.addEventListener('click', () => {
+                       if (currentPage > 1) {
+                           currentPage--;
+                           displayItems(currentPage);
+                           updatePaginationButtons();
+                       }
+                   });
+                   paginationContainer.appendChild(prevButton);
 
-    <script>
-        // Show back-to-top button when scrolling down
-        window.onscroll = function() { showBackToTopButton() };
+                   // Create next button
+                   const nextButton = document.createElement('button');
+                   nextButton.textContent = 'Next';
+                   nextButton.classList.add('pagination-button');
+                   nextButton.disabled = currentPage === totalPages;
+                   nextButton.addEventListener('click', () => {
+                       if (currentPage < totalPages) {
+                           currentPage++;
+                           displayItems(currentPage);
+                           updatePaginationButtons();
+                       }
+                   });
+                   paginationContainer.appendChild(nextButton);
+               }
 
-        function showBackToTopButton() {
-            var button = document.querySelector('.back-to-top');
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                button.style.display = 'block';
-            } else {
-                button.style.display = 'none';
-            }
-        }
+               // Function to update pagination buttons based on current page
+               function updatePaginationButtons() {
+                   const prevButton = paginationContainer.querySelector('.pagination-button:first-child');
+                   const nextButton = paginationContainer.querySelector('.pagination-button:last-child');
+                   prevButton.disabled = currentPage === 1;
+                   nextButton.disabled = currentPage === totalPages;
+               }
 
-        // Scroll to top smoothly
-        function scrollToTop() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        }
-    </script>
-
+               // Initialize display
+               displayItems(currentPage);
+               createPaginationButtons();
+           })
+           .catch(error => {
+               // Handle error and hide loading state
+               console.error('Error fetching data:', error);
+               document.getElementById('loading').style.display = 'none';
+           });
+   </script>
 </body>
 </html>
