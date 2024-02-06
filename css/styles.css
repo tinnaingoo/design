@@ -60,12 +60,14 @@ label {
 
 
 section {
-    margin-bottom: 10px; /* Adjust the margin between image-box elements */
-    break-inside: avoid; /* Prevent breaks inside an image-box */
+    margin-bottom: 10px;
+    break-inside: avoid;
     margin-top: 2px;
     padding-left: 5px;
     padding-right: 5px;
-    border-style: ridge;
+    border-style: solid;
+    border-color: transparent;
+    border-width: thin;
 }
 
 #faqSection  {
