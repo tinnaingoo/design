@@ -8,6 +8,11 @@ body {
   text-align: center;
 }
 
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
 .sticky {
   position: fixed;
   top: 0;
