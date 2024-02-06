@@ -8,6 +8,15 @@ body {
   text-align: center;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
 
 .search {
     text-align: center;
@@ -36,16 +45,6 @@ body {
   }
 
 
-.top {
-  height: 250px;
-  padding-top: 40px;
-}
-.hero {
-  width: 200px;
-  height: 100px;
-  background: #ccc;
-  margin: 0 auto;
-}
 
 
 .search-box {
