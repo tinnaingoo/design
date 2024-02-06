@@ -1,64 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Post Preview</title>
-   <style>
-     /* Your styling goes here */
-   </style>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+   <link rel="manifest" href="favicon/site.webmanifest">
+
+   
+   <link rel="stylesheet" href="css/topnav.css">
+   <link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/ad-styles.css">
+   <link rel="stylesheet" href="css/styles.css">
+   
+
+   <title>Computer Technology and Knowledge Sharing</title>
+
+    <style>
+        .loading {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .faq--container img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
 
-<h1 id="postTitle">Post Title</h1>
-<img id="postImage" src="placeholder.jpg" alt="Post Image">
-<p id="postDescription">Post Description</p>
-<p id="postTag">Post Tag</p>
-<a id="downloadBtn" href="#" onclick="downloadPost()">Download</a>
+  <div class="header">
+  <h2>PNG Download</h2>
+  <p>PNG File free download for Graphic Designer</p>
+</div>
+
+<div id="navbar">
+  <div class="search" id="search-box">
+    <input type="search" placeholder="Search with Keywords" id="searchInput" oninput="filterFAQs()"/>
+  </div>
+</div>
 
 <script>
-   // Function to get post details from URL parameters
-   function getPostDetails() {
-     const urlParams = new URLSearchParams(window.location.search);
+window.onscroll = function() {myFunction()};
 
-     // Get post details from URL parameters
-     const postId = urlParams.get('id');
-     const postTitle = decodeURIComponent(urlParams.get('title'));
-     const postImageUrl = decodeURIComponent(urlParams.get('imageUrl'));
-     const postDescription = decodeURIComponent(urlParams.get('description'));
-     const postTag = decodeURIComponent(urlParams.get('tag'));
-     const postDownloadLink = decodeURIComponent(urlParams.get('downloadLink'));
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
 
-     return {
-       id: postId,
-       title: postTitle,
-       imageUrl: postImageUrl,
-       description: postDescription,
-       tag: postTag,
-       downloadLink: postDownloadLink
-     };
-   }
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+   
+   
 
-   // Function to display post details on the page
-   function displayPostDetails() {
-     const postDetails = getPostDetails();
+  
+   
+<script>
+var wrap = $("#wrap");
 
-     document.getElementById('postTitle').innerText = postDetails.title;
-     document.getElementById('postImage').src = postDetails.imageUrl;
-     document.getElementById('postDescription').innerText = postDetails.description;
-     document.getElementById('postTag').innerText = "Tag: " + postDetails.tag;
-     document.getElementById('downloadBtn').href = postDetails.downloadLink;
-   }
+wrap.on("scroll", function(e) {
+    
+  if (this.scrollTop > 147) {
+    wrap.addClass("fix-search");
+  } else {
+    wrap.removeClass("fix-search");
+  }
+  
+});
+</script>
+   
+   
+   
+<div class="loading" id="loading">Loading...</div>
+   
+<div class="faq--container">
+    
 
-   // Function to simulate download action (replace with actual download logic)
-   function downloadPost() {
-     const postDetails = getPostDetails();
-     alert('Simulating download for post: ' + postDetails.title);
-     // Add your download logic here
-   }
+    <section class="faq--01" id="faqSection">
+        <!-- Content will be dynamically added here -->
+    </section>
+</div>
 
-   // Call displayPostDetails when the page loads
-   window.onload = displayPostDetails;
+<script>
+    // Show loading state
+    document.getElementById('loading').style.display = 'block';
+
+    // Fetch data from post.json
+    fetch('post.json')
+        .then(response => response.json())
+        .then(data => {
+            // Hide loading state
+            document.getElementById('loading').style.display = 'none';
+
+            // Store original data for filtering
+            const originalData = data;
+
+            // Initialize FAQ section
+            const faqSection = document.getElementById('faqSection');
+
+            // Create FAQ sections dynamically
+            data.forEach(item => {
+                createFaqSection(item.title, item.description, item.img_url, faqSection);
+            });
+
+            // Function to create FAQ sections dynamically
+            function createFaqSection(title, description, imgUrl, container) {
+                // Create elements
+                var section = document.createElement('section');
+                var h1 = document.createElement('h1');
+                var img = document.createElement('img');
+                var p = document.createElement('p');
+
+                // Set content
+                h1.textContent = title;
+               
+               //Set Image
+               img.src = imgUrl;
+               
+                p.textContent = description;
+
+                // Append elements to the section
+                section.appendChild(h1);
+                section.appendChild(img);
+                section.appendChild(p);
+
+                // Append section to the specified container
+                container.appendChild(section);
+            }
+
+            // Function to filter FAQs based on search input
+            window.filterFAQs = function () {
+                const searchInput = document.getElementById('searchInput').value.toLowerCase();
+
+                // Filter data based on search input
+                const filteredData = originalData.filter(item => item.description.toLowerCase().includes(searchInput));
+
+                // Clear existing content in the FAQ section
+                faqSection.innerHTML = '';
+
+                // Create FAQ sections for filtered data
+                filteredData.forEach(item => {
+                    createFaqSection(item.title, item.description, item.img_url, faqSection);
+                });
+            };
+        })
+        .catch(error => {
+            // Handle error and hide loading state
+            console.error('Error fetching data:', error);
+            document.getElementById('loading').style.display = 'none';
+        });
 </script>
 
 </body>
