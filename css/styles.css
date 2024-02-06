@@ -72,6 +72,11 @@ section {
     border-width: thin;
 }
 
+section :hover {
+    background: gray;
+}
+
+
 #faqSection  {
   column-count: 5; /* You can adjust the number of columns as needed */
   column-gap: 10px;
