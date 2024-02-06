@@ -134,6 +134,9 @@ wrap.on("scroll", function(e) {
                    pageItems.forEach(item => {
                        createFaqSection(item.title, item.description, item.img_url, faqSection);
                    });
+
+                   // Highlight the current page button
+                   highlightCurrentPageButton();
                }
 
                // Function to create FAQ sections dynamically
@@ -203,6 +206,9 @@ wrap.on("scroll", function(e) {
                        }
                    });
                    paginationContainer.appendChild(nextButton);
+
+                   // Highlight the current page button
+                   highlightCurrentPageButton();
                }
 
                // Function to update pagination buttons based on current page
@@ -211,6 +217,20 @@ wrap.on("scroll", function(e) {
                    const nextButton = paginationContainer.querySelector('.pagination-button:last-child');
                    prevButton.disabled = currentPage === 1;
                    nextButton.disabled = currentPage === totalPages;
+
+                   // Highlight the current page button
+                   highlightCurrentPageButton();
+               }
+
+               // Function to highlight the current page button
+               function highlightCurrentPageButton() {
+                   const pageButtons = paginationContainer.querySelectorAll('.pagination-button');
+                   pageButtons.forEach(button => {
+                       button.classList.remove('active');
+                       if (parseInt(button.textContent) === currentPage) {
+                           button.classList.add('active');
+                       }
+                   });
                }
 
                // Initialize display
