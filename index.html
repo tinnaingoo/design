@@ -34,17 +34,24 @@
 </head>
 <body>
 
-   <div class="header">
-     <h2>Scroll Down</h2>
-     <p>Scroll down to see the sticky effect.</p>
-   </div>
-<script>
-window.onscroll = function() {stikeyOption()};
+  <div class="header">
+  <h2>Scroll Down</h2>
+  <p>Scroll down to see the sticky effect.</p>
+</div>
 
-var navbar = document.getElementById("search-box");
+<div id="navbar">
+  <a class="active" href="javascript:void(0)">Home</a>
+  <a href="javascript:void(0)">News</a>
+  <a href="javascript:void(0)">Contact</a>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
-function stikeyOption() {
+function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
   } else {
@@ -52,6 +59,7 @@ function stikeyOption() {
   }
 }
 </script>
+   
    
 
   <div class="search" id="search-box">
