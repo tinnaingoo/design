@@ -78,8 +78,6 @@ wrap.on("scroll", function(e) {
 });
 </script>
    
-   
-   
 <div class="loading" id="loading">Loading...</div>
 
    <div class="faq--container" id="faqContainer">
@@ -181,10 +179,15 @@ wrap.on("scroll", function(e) {
                    paginationContainer.appendChild(prevButton);
 
                    // Create page buttons
-                   for (let i = 1; i <= totalPages; i++) {
+                   const startPage = Math.max(currentPage - 3, 1);
+                   const endPage = Math.min(startPage + 7, totalPages);
+                   for (let i = startPage; i <= endPage; i++) {
                        const pageButton = document.createElement('button');
                        pageButton.textContent = i;
                        pageButton.classList.add('pagination-button');
+                       if (i === currentPage) {
+                           pageButton.classList.add('active');
+                       }
                        pageButton.addEventListener('click', () => {
                            currentPage = i;
                            displayItems(currentPage);
@@ -206,9 +209,6 @@ wrap.on("scroll", function(e) {
                        }
                    });
                    paginationContainer.appendChild(nextButton);
-
-                   // Highlight the current page button
-                   highlightCurrentPageButton();
                }
 
                // Function to update pagination buttons based on current page
