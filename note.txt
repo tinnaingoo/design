@@ -1,0 +1,422 @@
+[
+  {
+    "title": "Apple Juice png",
+    "description": "juice, glass,png, fruit, apple, apple juice",
+    "img_url": "imgs/2_2_2024_1.png"
+  },
+  {
+    "title": "how to relax?",
+    "description": "orange juice in drinking glass, Orange juice Soft drink Smoothie Breakfast, Orange juice, orange, health Shake, non Alcoholic Beverage png",
+    "img_url": "imgs/2_2_2024_2.png"
+  },
+  {
+    "title": "favorite books",
+    "description": "Read 'To Kill a Mockingbird'",
+    "img_url": "imgs/2_2_2024_3.png"
+  },
+  {
+    "title": "best travel destination",
+    "description": "Visit Kyoto, Japan",
+    "img_url": "imgs/2_2_2024_4.png"
+  },
+  {
+    "title": "learning a language",
+    "description": "Practice with Duolingo daily",
+    "img_url": "imgs/2_2_2024_5.png"
+  },
+  {
+    "title": "keeping fit",
+    "description": "Engage in regular cardio exercises",
+    "img_url": "imgs/2_2_2024_6.png"
+  },
+  {
+    "title": "effective study habits",
+    "description": "Use the Pomodoro technique",
+    "img_url": "imgs/2_2_2024_7.png"
+  },
+  {
+    "title": "creative writing tips",
+    "description": "Start with a captivating hook",
+    "img_url": "imgs/2_2_2024_8.png"
+  },
+  {
+    "title": "choosing a pet",
+    "description": "Consider adopting a rescue animal",
+    "img_url": "imgs/2_2_2024_9.png"
+  },
+  {
+    "title": "gardening advice",
+    "description": "Plant herbs for a kitchen garden",
+    "img_url": "imgs/2_2_2024_10.png"
+  },
+  {
+    "title": "budget-friendly recipes",
+    "description": "Cook pasta with tomato sauce and veggies",
+    "img_url": "imgs/2_2_2024_11.png"
+  },
+  {
+    "title": "home office setup",
+    "description": "Invest in an ergonomic chair",
+    "img_url": "imgs/2_2_2024_12.png"
+  },
+  {
+    "title": "stress management",
+    "description": "Practice mindfulness meditation",
+    "img_url": "imgs/2_2_2024_13.png"
+  },
+  {
+    "title": "DIY home decor",
+    "description": "Create wall art with recycled materials",
+    "img_url": "imgs/2_2_2024_14.png"
+  },
+  {
+    "title": "family bonding activities",
+    "description": "Have a weekly game night",
+    "img_url": "imgs/2_2_2024_15.png"
+  },
+  {
+    "title": "improving focus",
+    "description": "Minimize multitasking",
+    "img_url": "imgs/2_2_2024_16.png"
+  },
+  {
+    "title": "digital photography tips",
+    "description": "Experiment with different angles",
+    "img_url": "imgs/2_2_2024_17.png"
+  },
+  {
+    "title": "learning to code",
+    "description": "Start with Python programming",
+    "img_url": "imgs/2_2_2024_18.png"
+  },
+  {
+    "title": "mind-bending movies",
+    "description": "Watch 'Inception'",
+    "img_url": "imgs/2_2_2024_19.png"
+  },
+  {
+    "title": "home workout routines",
+    "description": "Incorporate bodyweight exercises",
+    "img_url": "imgs/2_2_2024_20.png"
+  },
+  {
+    "title": "outdoor adventure ideas",
+    "description": "Go kayaking in a nearby lake",
+    "img_url": "imgs/3_2_2024_1.png"
+  },
+  {
+    "title": "interior design basics",
+    "description": "Focus on color coordination",
+    "img_url": "imgs/3_2_2024_2.png"
+  },
+  {
+    "title": "mind-expanding books",
+    "description": "Read 'Sapiens' by Yuval Noah Harari",
+    "img_url": "imgs/3_2_2024_3.png"
+  },
+  {
+    "title": "classic movies to watch",
+    "description": "View 'Casablanca'",
+    "img_url": "imgs/3_2_2024_4.png"
+  },
+  {
+    "title": "effective communication",
+    "description": "Practice active listening",
+    "img_url": "imgs/3_2_2024_5.png"
+  },
+  {
+    "title": "adopting a minimalist lifestyle",
+    "description": "Declutter your living space",
+    "img_url": "imgs/3_2_2024_6.png"
+  },
+  {
+    "title": "essential camping gear",
+    "description": "Pack a durable tent and sleeping bag",
+    "img_url": "imgs/3_2_2024_7.png"
+  },
+  {
+    "title": "baking for beginners",
+    "description": "Start with chocolate chip cookies",
+    "img_url": "imgs/3_2_2024_8.png"
+  },
+  {
+    "title": "self-reflection practices",
+    "description": "Journal your thoughts daily",
+    "img_url": "imgs/3_2_2024_9.png"
+  },
+  {
+    "title": "improving posture",
+    "description": "Sit up straight and stretch regularly",
+    "img_url": "imgs/3_2_2024_10.png"
+  },
+  {
+    "title": "budget travel tips",
+    "description": "Use public transportation",
+    "img_url": "imgs/3_2_2024_11.png"
+  },
+  {
+    "title": "mindful eating habits",
+    "description": "Chew food slowly and savor each bite",
+    "img_url": "imgs/3_2_2024_12.png"
+  },
+  {
+    "title": "caring for indoor plants",
+    "description": "Water according to plant species",
+    "img_url": "imgs/3_2_2024_13.png"
+  },
+  {
+    "title": "maintaining a skincare routine",
+    "description": "Cleanse, tone, and moisturize daily",
+    "img_url": "imgs/3_2_2024_14.png"
+  },
+  {
+    "title": "learning to play an instrument",
+    "description": "Start with a ukulele",
+    "img_url": "imgs/3_2_2024_15.png"
+  },
+  {
+    "title": "effective time management",
+    "description": "Use a productivity app",
+    "img_url": "imgs/3_2_2024_16.png"
+  },
+  {
+    "title": "mind-challenging puzzles",
+    "description": "Solve Sudoku regularly",
+    "img_url": "imgs/3_2_2024_17.png"
+  },
+  {
+    "title": "building a reading habit",
+    "description": "Set aside dedicated reading time",
+    "img_url": "imgs/3_2_2024_18.png"
+  },
+  {
+    "title": "creating a budget",
+    "description": "Track expenses and prioritize needs",
+    "img_url": "imgs/3_2_2024_19.png"
+  },
+  {
+    "title": "meal prepping for the week",
+    "description": "Plan nutritious and balanced meals",
+    "img_url": "imgs/3_2_2024_20.png"
+  },
+  {
+    "title": "DIY skincare masks",
+    "description": "Use honey and yogurt for a hydrating mask",
+    "img_url": "imgs/4_2_2024_1.png"
+  },
+  {
+    "title": "essential kitchen gadgets",
+    "description": "Invest in a quality chef's knife",
+    "img_url": "imgs/4_2_2024_2.png"
+  },
+  {
+    "title": "effective public speaking",
+    "description": "Practice in front of a mirror",
+    "img_url": "imgs/4_2_2024_3.png"
+  },
+  {
+    "title": "mind-soothing music",
+    "description": "Listen to instrumental tracks",
+    "img_url": "imgs/4_2_2024_4.png"
+  },
+  {
+    "title": "beginner painting techniques",
+    "description": "Experiment with acrylics on canvas",
+    "img_url": "imgs/4_2_2024_5.png"
+  },
+  {
+    "title": "sustainable living tips",
+    "description": "Reduce single-use plastic consumption",
+    "img_url": "imgs/4_2_2024_6.png"
+  },
+  {
+    "title": "healthy snack alternatives",
+    "description": "Choose nuts and fruits over chips",
+    "img_url": "imgs/4_2_2024_7.png"
+  },
+  {
+    "title": "building positive habits",
+    "description": "Start with small, achievable goals",
+    "img_url": "imgs/4_2_2024_8.png"
+  },
+  {
+    "title": "effective email communication",
+    "description": "Use clear and concise language",
+    "img_url": "imgs/4_2_2024_9.png"
+  },
+  {
+    "title": "creative podcast ideas",
+    "description": "Explore historical mysteries",
+    "img_url": "imgs/4_2_2024_10.png"
+  },
+  {
+    "title": "home organization hacks",
+    "description": "Label storage bins for easy access",
+    "img_url": "imgs/4_2_2024_11.png"
+  },
+  {
+    "title": "mindfulness exercises",
+    "description": "Practice deep breathing",
+    "img_url": "imgs/4_2_2024_12.png"
+  },
+  {
+    "title": "upcycling projects",
+    "description": "Turn old jars into candle holders",
+    "img_url": "imgs/4_2_2024_13.png"
+  },
+  {
+    "title": "choosing a career path",
+    "description": "Consider your passion and skills",
+    "img_url": "imgs/4_2_2024_14.png"
+  },
+  {
+    "title": "unique travel experiences",
+    "description": "Stay in a treehouse accommodation",
+    "img_url": "imgs/4_2_2024_15.png"
+  },
+  {
+    "title": "captivating short stories",
+    "description": "Explore the works of Edgar Allan Poe",
+    "img_url": "imgs/4_2_2024_16.png"
+  },
+  {
+    "title": "DIY home spa day",
+    "description": "Create a soothing face mask with oatmeal",
+    "img_url": "imgs/4_2_2024_17.png"
+  },
+  {
+    "title": "mind-boggling optical illusions",
+    "description": "View 'The Dress' illusion",
+    "img_url": "imgs/4_2_2024_18.png"
+  },
+  {
+    "title": "outdoor photography tips",
+    "description": "Capture the golden hour light",
+    "img_url": "imgs/4_2_2024_19.png"
+  },
+  {
+    "title": "building resilience",
+    "description": "Learn from setbacks and challenges",
+    "img_url": "imgs/4_2_2024_20.png"
+  },
+  {
+    "title": "building resilience",
+    "description": "slices of citrus, Lemonade Lime Auglis, lemon, food, citrus png",
+    "img_url": "imgs/4_2_2024_21.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_1.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_2.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_3.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_4.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_5.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_6.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_7.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_8.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_9.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_10.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_11.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_12.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_13.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_14.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_15.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_16.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_17.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_18.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_20.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_21.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_22.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_23.png"
+  },
+  {
+    "title": "Design Png",
+    "description": "design, png, transparent, shape",
+    "img_url": "imgs/5_2_2024_24.png"
+  }
+]
