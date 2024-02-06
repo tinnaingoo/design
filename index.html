@@ -38,8 +38,23 @@
      <h2>Scroll Down</h2>
      <p>Scroll down to see the sticky effect.</p>
    </div>
+<script>
+window.onscroll = function() {stikeyOption()};
 
-  <div class="search">
+var navbar = document.getElementById("search-box");
+var sticky = navbar.offsetTop;
+
+function stikeyOption() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+   
+
+  <div class="search" id="search-box">
     <input type="search" placeholder="Search or type URL" id="searchInput" oninput="filterFAQs()"/>
   </div>
    
