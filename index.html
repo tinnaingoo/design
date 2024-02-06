@@ -163,7 +163,7 @@ wrap.on("scroll", function(e) {
                    // Clear existing pagination buttons
                    paginationContainer.innerHTML = '';
 
-                   // Create previous button
+                   // Create "Previous" button
                    const prevButton = document.createElement('button');
                    prevButton.textContent = 'Previous';
                    prevButton.classList.add('pagination-button');
@@ -177,7 +177,20 @@ wrap.on("scroll", function(e) {
                    });
                    paginationContainer.appendChild(prevButton);
 
-                   // Create next button
+                   // Create page buttons
+                   for (let i = 1; i <= totalPages; i++) {
+                       const pageButton = document.createElement('button');
+                       pageButton.textContent = i;
+                       pageButton.classList.add('pagination-button');
+                       pageButton.addEventListener('click', () => {
+                           currentPage = i;
+                           displayItems(currentPage);
+                           updatePaginationButtons();
+                       });
+                       paginationContainer.appendChild(pageButton);
+                   }
+
+                   // Create "Next" button
                    const nextButton = document.createElement('button');
                    nextButton.textContent = 'Next';
                    nextButton.classList.add('pagination-button');
