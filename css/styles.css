@@ -23,6 +23,8 @@ body {
     transition: width 0.2s;
     -webkit-appearance: none;
     margin: 3px;
+    border-radius: 20px;
+    text-align: center;
     }
         
 .search .fix-search & {
