@@ -1,0 +1,12 @@
+/* Webfont: Madelin-Bold */@font-face {
+    font-family: 'Madelin';
+    src: url('Madelin-Bold.eot'); /* IE9 Compat Modes */
+    src: url('Madelin-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Madelin-Bold.woff') format('woff'), /* Modern Browsers */
+         url('Madelin-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Madelin-Bold.svg#Madelin-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+

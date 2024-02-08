@@ -1,0 +1,12 @@
+/* Webfont: Zisel-Regular */@font-face {
+    font-family: 'Zisel';
+    src: url('Zisel-Regular.eot'); /* IE9 Compat Modes */
+    src: url('Zisel-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Zisel-Regular.woff') format('woff'), /* Modern Browsers */
+         url('Zisel-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Zisel-Regular.svg#Zisel-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+

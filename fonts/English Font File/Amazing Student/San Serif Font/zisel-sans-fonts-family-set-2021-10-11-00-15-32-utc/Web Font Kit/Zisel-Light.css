@@ -1,0 +1,12 @@
+/* Webfont: Zisel-Light */@font-face {
+    font-family: 'ZiselLight';
+    src: url('Zisel-Light.eot'); /* IE9 Compat Modes */
+    src: url('Zisel-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Zisel-Light.woff') format('woff'), /* Modern Browsers */
+         url('Zisel-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Zisel-Light.svg#Zisel-Light') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

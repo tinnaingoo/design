@@ -1,0 +1,12 @@
+/* Webfont: Zisel-Thin */@font-face {
+    font-family: 'ZiselThin';
+    src: url('Zisel-Thin.eot'); /* IE9 Compat Modes */
+    src: url('Zisel-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Zisel-Thin.woff') format('woff'), /* Modern Browsers */
+         url('Zisel-Thin.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Zisel-Thin.svg#Zisel-Thin') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

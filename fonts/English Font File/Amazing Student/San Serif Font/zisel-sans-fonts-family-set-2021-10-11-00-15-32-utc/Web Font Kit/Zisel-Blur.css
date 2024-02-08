@@ -1,0 +1,12 @@
+/* Webfont: Zisel-Blur */@font-face {
+    font-family: 'ZiselBlur';
+    src: url('Zisel-Blur.eot'); /* IE9 Compat Modes */
+    src: url('Zisel-Blur.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Zisel-Blur.woff') format('woff'), /* Modern Browsers */
+         url('Zisel-Blur.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Zisel-Blur.svg#Zisel-Blur') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

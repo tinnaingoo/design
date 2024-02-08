@@ -1,0 +1,12 @@
+/* Webfont: Zisel-Black */@font-face {
+    font-family: 'ZiselBlack';
+    src: url('Zisel-Black.eot'); /* IE9 Compat Modes */
+    src: url('Zisel-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Zisel-Black.woff') format('woff'), /* Modern Browsers */
+         url('Zisel-Black.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Zisel-Black.svg#Zisel-Black') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+

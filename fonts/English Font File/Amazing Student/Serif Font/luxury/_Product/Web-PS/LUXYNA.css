@@ -1,0 +1,9 @@
+/* Webfont: LUXYNA */@font-face {
+    font-family: 'LUXYNA';
+    src: url('LUXYNA.woff2') format('woff2'), /* Modern Browsers */
+         url('LUXYNA.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

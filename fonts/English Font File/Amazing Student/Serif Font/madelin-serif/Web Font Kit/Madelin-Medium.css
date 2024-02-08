@@ -1,0 +1,12 @@
+/* Webfont: Madelin-Medium */@font-face {
+    font-family: 'MadelinMedium';
+    src: url('Madelin-Medium.eot'); /* IE9 Compat Modes */
+    src: url('Madelin-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Madelin-Medium.woff') format('woff'), /* Modern Browsers */
+         url('Madelin-Medium.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Madelin-Medium.svg#Madelin-Medium') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

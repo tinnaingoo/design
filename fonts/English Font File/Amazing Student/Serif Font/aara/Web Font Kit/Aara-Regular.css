@@ -1,0 +1,12 @@
+/* Webfont: Aara-Regular */@font-face {
+    font-family: 'AaraRegular';
+    src: url('Aara-Regular.eot'); /* IE9 Compat Modes */
+    src: url('Aara-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Aara-Regular.woff') format('woff'), /* Modern Browsers */
+         url('Aara-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Aara-Regular.svg#Aara-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

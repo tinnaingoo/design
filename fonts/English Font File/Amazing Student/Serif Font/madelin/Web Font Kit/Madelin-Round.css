@@ -1,0 +1,12 @@
+/* Webfont: Madelin-Round */@font-face {
+    font-family: 'MadelinRound';
+    src: url('Madelin-Round.eot'); /* IE9 Compat Modes */
+    src: url('Madelin-Round.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Madelin-Round.woff') format('woff'), /* Modern Browsers */
+         url('Madelin-Round.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Madelin-Round.svg#Madelin-Round') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

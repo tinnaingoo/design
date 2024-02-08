@@ -1,0 +1,12 @@
+/* Webfont: Aara-Light */@font-face {
+    font-family: 'AaraLight';
+    src: url('Aara-Light.eot'); /* IE9 Compat Modes */
+    src: url('Aara-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Aara-Light.woff') format('woff'), /* Modern Browsers */
+         url('Aara-Light.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Aara-Light.svg#Aara-Light') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

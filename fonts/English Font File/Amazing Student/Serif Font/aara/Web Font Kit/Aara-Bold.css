@@ -1,0 +1,12 @@
+/* Webfont: Aara-Bold */@font-face {
+    font-family: 'Aara7';
+    src: url('Aara-Bold.eot'); /* IE9 Compat Modes */
+    src: url('Aara-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Aara-Bold.woff') format('woff'), /* Modern Browsers */
+         url('Aara-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Aara-Bold.svg#Aara-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+

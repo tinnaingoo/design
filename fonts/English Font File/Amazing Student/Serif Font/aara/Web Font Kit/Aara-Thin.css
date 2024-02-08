@@ -1,0 +1,12 @@
+/* Webfont: Aara-Thin */@font-face {
+    font-family: 'AaraThin';
+    src: url('Aara-Thin.eot'); /* IE9 Compat Modes */
+    src: url('Aara-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('Aara-Thin.woff') format('woff'), /* Modern Browsers */
+         url('Aara-Thin.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('Aara-Thin.svg#Aara-Thin') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
