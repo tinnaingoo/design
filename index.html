@@ -70,9 +70,6 @@
     </section>
 </div>
 
-<div class="pagination" id="paginationContainer">
-    <!-- Pagination buttons will be dynamically added here -->
-</div>
 
 <script>
     // Show loading state
@@ -140,84 +137,6 @@
                 container.appendChild(section);
             }
 
-            // Function to create pagination buttons dynamically
-            function createPaginationButtons() {
-                // Clear existing pagination buttons
-                paginationContainer.innerHTML = '';
-
-                // Create "Previous" button
-                const prevButton = document.createElement('button');
-                prevButton.textContent = 'Previous';
-                prevButton.classList.add('pagination-button');
-                prevButton.disabled = currentPage === 1;
-                prevButton.addEventListener('click', () => {
-                    if (currentPage > 1) {
-                        currentPage--;
-                        displayItems(currentPage);
-                        updatePaginationButtons();
-                    }
-                });
-                paginationContainer.appendChild(prevButton);
-
-                // Create page buttons
-                const startPage = Math.max(currentPage - 3, 1);
-                const endPage = Math.min(startPage + 7, totalPages);
-                for (let i = startPage; i <= endPage; i++) {
-                    const pageButton = document.createElement('button');
-                    pageButton.textContent = i;
-                    pageButton.classList.add('pagination-button');
-                    if (i === currentPage) {
-                        pageButton.classList.add('active');
-                    }
-                    pageButton.addEventListener('click', () => {
-                        currentPage = i;
-                        displayItems(currentPage);
-                        updatePaginationButtons();
-                    });
-                    paginationContainer.appendChild(pageButton);
-                }
-
-                // Create "Next" button
-                const nextButton = document.createElement('button');
-                nextButton.textContent = 'Next';
-                nextButton.classList.add('pagination-button');
-                nextButton.disabled = currentPage === totalPages;
-                nextButton.addEventListener('click', () => {
-                    if (currentPage < totalPages) {
-                        currentPage++;
-                        displayItems(currentPage);
-                        updatePaginationButtons();
-                    }
-                });
-                paginationContainer.appendChild(nextButton);
-            }
-
-            // Function to update pagination buttons based on current page
-            function updatePaginationButtons() {
-                const prevButton = paginationContainer.querySelector('.pagination-button:first-child');
-                const nextButton = paginationContainer.querySelector('.pagination-button:last-child');
-                prevButton.disabled = currentPage === 1;
-                nextButton.disabled = currentPage === totalPages;
-
-                // Highlight the current page button
-                highlightCurrentPageButton();
-            }
-
-            // Function to highlight the current page button
-            function highlightCurrentPageButton() {
-                const pageButtons = paginationContainer.querySelectorAll('.pagination-button');
-                pageButtons.forEach(button => {
-                    button.classList.remove('active');
-                    if (parseInt(button.textContent) === currentPage) {
-                        button.classList.add('active');
-                    }
-                });
-            }
-
-            // Initialize display
-            displayItems(currentPage);
-            createPaginationButtons();
-        })
         .catch(error => {
             // Handle error and hide loading state
             console.error('Error fetching data:', error);
