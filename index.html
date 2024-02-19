@@ -9,12 +9,10 @@
    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
    <link rel="manifest" href="favicon/site.webmanifest">
 
-   
    <link rel="stylesheet" href="css/topnav.css">
    <link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/ad-styles.css">
    <link rel="stylesheet" href="css/styles.css">
-   
 
    <title>Computer Technology and Knowledge Sharing</title>
 
@@ -30,11 +28,30 @@
             height: auto;
             margin-bottom: 10px;
         }
+
+        .pagination {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .pagination-button {
+            margin: 0 5px;
+            padding: 5px 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .pagination-button.active {
+            background-color: #4caf50;
+            color: #ffffff;
+        }
     </style>
 </head>
 <body>
 
-  <div class="header">
+<div class="header">
   <h2>PNG Download</h2>
   <p>PNG File free download for Graphic Designer</p>
 </div>
@@ -45,203 +62,167 @@
   </div>
 </div>
 
-<script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
-   
-   
-
-  
-   
-<script>
-var wrap = $("#wrap");
-
-wrap.on("scroll", function(e) {
-    
-  if (this.scrollTop > 147) {
-    wrap.addClass("fix-search");
-  } else {
-    wrap.removeClass("fix-search");
-  }
-  
-});
-</script>
-   
 <div class="loading" id="loading">Loading...</div>
 
-   <div class="faq--container" id="faqContainer">
-       <section class="faq--01" id="faqSection">
-           <!-- Content will be dynamically added here -->
-       </section>
+<div class="faq--container" id="faqContainer">
+    <section class="faq--01" id="faqSection">
+        <!-- Content will be dynamically added here -->
+    </section>
+</div>
 
-       <!-- Pagination -->
-       <div class="pagination" id="paginationContainer">
-           <!-- Pagination buttons will be dynamically added here -->
-       </div>
-   </div>
+<div class="pagination" id="paginationContainer">
+    <!-- Pagination buttons will be dynamically added here -->
+</div>
 
-   <!-- Your existing HTML content goes here -->
+<script>
+    // Show loading state
+    document.getElementById('loading').style.display = 'block';
 
-   <script>
-       // Show loading state
-       document.getElementById('loading').style.display = 'block';
+    // Fetch data from post.json
+    fetch('post.json')
+        .then(response => response.json())
+        .then(data => {
+            // Hide loading state
+            document.getElementById('loading').style.display = 'none';
 
-       // Fetch data from post.json
-       fetch('post.json')
-           .then(response => response.json())
-           .then(data => {
-               // Hide loading state
-               document.getElementById('loading').style.display = 'none';
+            // Store original data for pagination
+            const originalData = data;
 
-               // Store original data for pagination
-               const originalData = data;
+            // Initialize FAQ section and pagination container
+            const faqSection = document.getElementById('faqSection');
+            const paginationContainer = document.getElementById('paginationContainer');
 
-               // Initialize FAQ section and pagination container
-               const faqSection = document.getElementById('faqSection');
-               const paginationContainer = document.getElementById('paginationContainer');
+            // Initialize pagination variables
+            const itemsPerPage = 30;
+            let currentPage = 1;
+            const totalPages = Math.ceil(originalData.length / itemsPerPage);
 
-               // Initialize pagination variables
-               const itemsPerPage = 30;
-               let currentPage = 1;
-               const totalPages = Math.ceil(originalData.length / itemsPerPage);
+            // Function to display items for the current page
+            function displayItems(page) {
+                // Clear existing content in the FAQ section
+                faqSection.innerHTML = '';
 
-               // Function to display items for the current page
-               function displayItems(page) {
-                   // Clear existing content in the FAQ section
-                   faqSection.innerHTML = '';
+                // Calculate start and end indexes for the current page
+                const startIndex = (page - 1) * itemsPerPage;
+                const endIndex = startIndex + itemsPerPage;
 
-                   // Calculate start and end indexes for the current page
-                   const startIndex = (page - 1) * itemsPerPage;
-                   const endIndex = startIndex + itemsPerPage;
+                // Slice the original data to get items for the current page
+                const pageItems = originalData.slice(startIndex, endIndex);
 
-                   // Slice the original data to get items for the current page
-                   const pageItems = originalData.slice(startIndex, endIndex);
+                // Create FAQ sections for items on the current page
+                pageItems.forEach(item => {
+                    createFaqSection(item.title, item.description, item.img_url, faqSection);
+                });
 
-                   // Create FAQ sections for items on the current page
-                   pageItems.forEach(item => {
-                       createFaqSection(item.title, item.description, item.img_url, faqSection);
-                   });
+                // Highlight the current page button
+                highlightCurrentPageButton();
+            }
 
-                   // Highlight the current page button
-                   highlightCurrentPageButton();
-               }
+            // Function to create FAQ sections dynamically
+            function createFaqSection(title, description, imgUrl, container) {
+                // Create elements
+                var section = document.createElement('section');
+                var h1 = document.createElement('h1');
+                var img = document.createElement('img');
+                var p = document.createElement('p');
 
-               // Function to create FAQ sections dynamically
-               function createFaqSection(title, description, imgUrl, container) {
-                   // Create elements
-                   var section = document.createElement('section');
-                   var h1 = document.createElement('h1');
-                   var img = document.createElement('img');
-                   var p = document.createElement('p');
+                // Set content
+                h1.textContent = title;
+                img.src = imgUrl;
+                p.textContent = description;
 
-                   // Set content
-                   h1.textContent = title;
-                   img.src = imgUrl;
-                   p.textContent = description;
+                // Append elements to the section
+                section.appendChild(h1);
+                section.appendChild(img);
+                section.appendChild(p);
 
-                   // Append elements to the section
-                   section.appendChild(h1);
-                   section.appendChild(img);
-                   section.appendChild(p);
+                // Append section to the specified container
+                container.appendChild(section);
+            }
 
-                   // Append section to the specified container
-                   container.appendChild(section);
-               }
+            // Function to create pagination buttons dynamically
+            function createPaginationButtons() {
+                // Clear existing pagination buttons
+                paginationContainer.innerHTML = '';
 
-               // Function to create pagination buttons dynamically
-               function createPaginationButtons() {
-                   // Clear existing pagination buttons
-                   paginationContainer.innerHTML = '';
+                // Create "Previous" button
+                const prevButton = document.createElement('button');
+                prevButton.textContent = 'Previous';
+                prevButton.classList.add('pagination-button');
+                prevButton.disabled = currentPage === 1;
+                prevButton.addEventListener('click', () => {
+                    if (currentPage > 1) {
+                        currentPage--;
+                        displayItems(currentPage);
+                        updatePaginationButtons();
+                    }
+                });
+                paginationContainer.appendChild(prevButton);
 
-                   // Create "Previous" button
-                   const prevButton = document.createElement('button');
-                   prevButton.textContent = 'Previous';
-                   prevButton.classList.add('pagination-button');
-                   prevButton.disabled = currentPage === 1;
-                   prevButton.addEventListener('click', () => {
-                       if (currentPage > 1) {
-                           currentPage--;
-                           displayItems(currentPage);
-                           updatePaginationButtons();
-                       }
-                   });
-                   paginationContainer.appendChild(prevButton);
+                // Create page buttons
+                const startPage = Math.max(currentPage - 3, 1);
+                const endPage = Math.min(startPage + 7, totalPages);
+                for (let i = startPage; i <= endPage; i++) {
+                    const pageButton = document.createElement('button');
+                    pageButton.textContent = i;
+                    pageButton.classList.add('pagination-button');
+                    if (i === currentPage) {
+                        pageButton.classList.add('active');
+                    }
+                    pageButton.addEventListener('click', () => {
+                        currentPage = i;
+                        displayItems(currentPage);
+                        updatePaginationButtons();
+                    });
+                    paginationContainer.appendChild(pageButton);
+                }
 
-                   // Create page buttons
-                   const startPage = Math.max(currentPage - 3, 1);
-                   const endPage = Math.min(startPage + 7, totalPages);
-                   for (let i = startPage; i <= endPage; i++) {
-                       const pageButton = document.createElement('button');
-                       pageButton.textContent = i;
-                       pageButton.classList.add('pagination-button');
-                       if (i === currentPage) {
-                           pageButton.classList.add('active');
-                       }
-                       pageButton.addEventListener('click', () => {
-                           currentPage = i;
-                           displayItems(currentPage);
-                           updatePaginationButtons();
-                       });
-                       paginationContainer.appendChild(pageButton);
-                   }
+                // Create "Next" button
+                const nextButton = document.createElement('button');
+                nextButton.textContent = 'Next';
+                nextButton.classList.add('pagination-button');
+                nextButton.disabled = currentPage === totalPages;
+                nextButton.addEventListener('click', () => {
+                    if (currentPage < totalPages) {
+                        currentPage++;
+                        displayItems(currentPage);
+                        updatePaginationButtons();
+                    }
+                });
+                paginationContainer.appendChild(nextButton);
+            }
 
-                   // Create "Next" button
-                   const nextButton = document.createElement('button');
-                   nextButton.textContent = 'Next';
-                   nextButton.classList.add('pagination-button');
-                   nextButton.disabled = currentPage === totalPages;
-                   nextButton.addEventListener('click', () => {
-                       if (currentPage < totalPages) {
-                           currentPage++;
-                           displayItems(currentPage);
-                           updatePaginationButtons();
-                       }
-                   });
-                   paginationContainer.appendChild(nextButton);
-               }
+            // Function to update pagination buttons based on current page
+            function updatePaginationButtons() {
+                const prevButton = paginationContainer.querySelector('.pagination-button:first-child');
+                const nextButton = paginationContainer.querySelector('.pagination-button:last-child');
+                prevButton.disabled = currentPage === 1;
+                nextButton.disabled = currentPage === totalPages;
 
-               // Function to update pagination buttons based on current page
-               function updatePaginationButtons() {
-                   const prevButton = paginationContainer.querySelector('.pagination-button:first-child');
-                   const nextButton = paginationContainer.querySelector('.pagination-button:last-child');
-                   prevButton.disabled = currentPage === 1;
-                   nextButton.disabled = currentPage === totalPages;
+                // Highlight the current page button
+                highlightCurrentPageButton();
+            }
 
-                   // Highlight the current page button
-                   highlightCurrentPageButton();
-               }
+            // Function to highlight the current page button
+            function highlightCurrentPageButton() {
+                const pageButtons = paginationContainer.querySelectorAll('.pagination-button');
+                pageButtons.forEach(button => {
+                    button.classList.remove('active');
+                    if (parseInt(button.textContent) === currentPage) {
+                        button.classList.add('active');
+                    }
+                });
+            }
 
-               // Function to highlight the current page button
-               function highlightCurrentPageButton() {
-                   const pageButtons = paginationContainer.querySelectorAll('.pagination-button');
-                   pageButtons.forEach(button => {
-                       button.classList.remove('active');
-                       if (parseInt(button.textContent) === currentPage) {
-                           button.classList.add('active');
-                       }
-                   });
-               }
-
-               // Initialize display
-               displayItems(currentPage);
-               createPaginationButtons();
-           })
-           .catch(error => {
-               // Handle error and hide loading state
-               console.error('Error fetching data:', error);
-               document.getElementById('loading').style.display = 'none';
-           });
-   </script>
+            // Initialize display
+            displayItems(currentPage);
+            createPaginationButtons();
+        })
+        .catch(error => {
+            // Handle error and hide loading state
+            console.error('Error fetching data:', error);
+            document.getElementById('loading').style.display = 'none';
+        });
+</script>
 </body>
 </html>
