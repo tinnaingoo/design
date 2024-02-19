@@ -35,62 +35,53 @@
 <body>
 
   <div class="header">
-  <h2>PNG Download</h2>
-  <p>PNG File free download for Graphic Designer</p>
-</div>
-
-<div id="navbar">
-  <div class="search" id="search-box">
-    <input type="search" placeholder="Search with Keywords" id="searchInput" oninput="filterFAQs()"/>
+    <h2>PNG Download</h2>
+    <p>PNG File free download for Graphic Designer</p>
   </div>
-</div>
 
-<script>
-window.onscroll = function() {myFunction()};
+  <div id="navbar">
+    <div class="search" id="search-box">
+      <input type="search" placeholder="Search with Keywords" id="searchInput" oninput="filterFAQs()"/>
+    </div>
+  </div>
 
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+  <script>
+    window.onscroll = function() {myFunction()};
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
-   
-   
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
 
-  
-   
-<script>
-var wrap = $("#wrap");
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
 
-wrap.on("scroll", function(e) {
-    
-  if (this.scrollTop > 147) {
-    wrap.addClass("fix-search");
-  } else {
-    wrap.removeClass("fix-search");
-  }
-  
-});
-</script>
-   
-   
-   
-<div class="loading" id="loading">Loading...</div>
-   
-<div class="faq--container">
-    
+  <script>
+    var wrap = $("#wrap");
 
+    wrap.on("scroll", function(e) {
+      if (this.scrollTop > 147) {
+        wrap.addClass("fix-search");
+      } else {
+        wrap.removeClass("fix-search");
+      }
+    });
+  </script>
+
+  <div class="loading" id="loading">Loading...</div>
+
+  <div class="faq--container">
     <section class="faq--01" id="faqSection">
         <!-- Content will be dynamically added here -->
     </section>
-</div>
+    <p id="noResultsMessage" style="text-align: center; display: none;">No results found.</p>
+  </div>
 
-<script>
+  <script>
     // Show loading state
     document.getElementById('loading').style.display = 'block';
 
@@ -106,6 +97,7 @@ wrap.on("scroll", function(e) {
 
             // Initialize FAQ section
             const faqSection = document.getElementById('faqSection');
+            const noResultsMessage = document.getElementById('noResultsMessage');
 
             // Create FAQ sections dynamically
             data.forEach(item => {
@@ -122,10 +114,10 @@ wrap.on("scroll", function(e) {
 
                 // Set content
                 h1.textContent = title;
-               
-               //Set Image
-               img.src = imgUrl;
-               
+
+                // Set Image
+                img.src = imgUrl;
+
                 p.textContent = description;
 
                 // Append elements to the section
@@ -146,11 +138,17 @@ wrap.on("scroll", function(e) {
 
                 // Clear existing content in the FAQ section
                 faqSection.innerHTML = '';
+                noResultsMessage.style.display = 'none';
 
                 // Create FAQ sections for filtered data
-                filteredData.forEach(item => {
-                    createFaqSection(item.title, item.description, item.img_url, faqSection);
-                });
+                if (filteredData.length > 0) {
+                    filteredData.forEach(item => {
+                        createFaqSection(item.title, item.description, item.img_url, faqSection);
+                    });
+                } else {
+                    // Display no results message
+                    noResultsMessage.style.display = 'block';
+                }
             };
         })
         .catch(error => {
@@ -158,7 +156,7 @@ wrap.on("scroll", function(e) {
             console.error('Error fetching data:', error);
             document.getElementById('loading').style.display = 'none';
         });
-</script>
+  </script>
 
 </body>
 </html>
